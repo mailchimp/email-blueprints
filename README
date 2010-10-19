@@ -2,6 +2,6 @@ EEPML
 ===
 Email template components
 
-About
+/modules
 ---
-Create building blocks and common layouts to help simplify MailChimp's core Start from Scratch Templates
+Contains various media blocks for dropping into columns within layouts
