@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <!-- Facebook sharing information tags -->
+        <meta property="og:title" content="*|MC:SUBJECT|*" />
+        
+        <title>*|MC:SUBJECT|*</title>
+		<style type="text/css">
+			img{display:block;} /* Force GMail to ignore spacing between images. */
+            #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+			body{width:100% !important;} /* Force Hotmail to display emails at full width */
+            
+            /* Reset Styles */
+            body{margin:0; padding:0;}
+            img{border:none; outline:none; text-decoration:none;}
+			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+            
+            /* Template Styles */
+			/**
+			* @tab Page
+			* @section background color
+			* @tip Choose a color for your HTML email's background. You might choose one to match your company's branding.
+			* @theme page
+			*/
+			body, .backgroundTable{
+				/*@editable*/ background-color:#FAFAFA;
+			}
+        
+	        /**
+	        * @tab Page
+	        * @section border
+	        * @tip Add a border to help your template content stand out from your email's background.
+	        */
+	        #templateContainer{
+				/*@editable*/ background-color:#FFFFFF;
+	            /*@editable*/ border: 1px solid #DDDDDD;
+	        }
+			
+			h1, .h1{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:34px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-bottom:10px;
+				/*@editable*/ text-align:left;
+			}
+			
+			h2, .h2{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:30px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-bottom:10px;
+				/*@editable*/ text-align:left;
+			}
+			
+			h3, .h3{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:26px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-bottom:10px;
+				/*@editable*/ text-align:left;
+			}
+			
+			h4, .h4{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:22px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-bottom:10px;
+				/*@editable*/ text-align:left;
+			}
+			
+			.preheaderContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ text-align:center;
+			}
+			
+			.preheaderContent a:link, .preheaderContent a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			#templateHeader{
+				/*@editable*/ border-bottom:2px solid #DDDDDD;
+			}
+			
+			.headerContent{
+				/*@editable*/ color:#202020;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:34px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ text-align:center;
+			}
+			
+			.headerContent a:link, .headerContent a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			#headerImage{
+				height:auto;
+				max-width:600px !important;
+			}
+			
+			#templateBody{
+			}
+			
+			.bodyContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+			
+			.bodyContent a:link, .bodyContent a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			.bodyContent img{
+				display:inline;
+				margin-bottom:10px;
+			}
+			
+			.leftMidColumnContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+			
+			.leftMidColumnContent a:link, .leftMidColumnContent a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			.leftMidColumnContent img{
+				display:inline;
+				margin-bottom:10px;
+			}
+			
+			.rightMidColumnContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+			
+			.rightMidColumnContent a:link, .rightMidColumnContent a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			.rightMidColumnContent img{
+				display:inline;
+				margin-bottom:10px;
+			}
+			
+			.leftLowerColumnContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+			
+			.leftLowerColumnContent a:link, .leftLowerColumnContent a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			.leftLowerColumnContent img{
+				display:inline;
+				margin-bottom:10px;
+			}
+			
+			.centerLowerColumnContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+			
+			.centerLowerColumnContent a:link, .centerLowerColumnContent a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			.centerLowerColumnContent img{
+				display:inline;
+				margin-bottom:10px;
+			}
+			
+			.rightLowerColumnContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+			
+			.rightLowerColumnContent a:link, .rightLowerColumnContent a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			.rightLowerColumnContent img{
+				display:inline;
+				margin-bottom:10px;
+			}
+			
+			#templateFooter{
+				/*@editable*/ background-color:#FDFDFD;
+			}
+			
+			.footerContent{
+				/*@editable*/ color:#707070;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:125%;
+				/*@editable*/ text-align:left;
+			}
+			
+			.footerContent a:link, #footerContent a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			
+			.footerContent img{
+				display:inline;
+			}
+			
+			#social{
+				/*@editable*/ background-color:#FAFAFA;
+				/*@editable*/ border:1px solid #F5F5F5;
+				/*@editable*/ text-align:center;
+			}
+			
+			#utility{
+				/*@editable*/ background-color:#FDFDFD;
+				/*@editable*/ border-top:1px solid #F5F5F5;
+				/*@editable*/ text-align:center;
+			}
+		</style>
+	</head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    	<center>
+        	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
+            	<tr>
+                	<td align="center" valign="top">
+                        <!-- // Begin Template Preheader \\ -->
+                        <table border="0" cellpadding="10" cellspacing="0" width="600" id="templatePreheader">
+                            <tr>
+                                <td valign="top" class="preheaderContent">
+                                
+                                	<!-- // Begin Module: Standard Preheader \\ -->
+                                    <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td valign="top" class="preheaderContent">
+                                            	<div mc:edit="">
+                                                	Is this email not displaying correctly? <a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                	<!-- // Begin Module: Standard Preheader \\ -->
+                                
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // End Template Preheader \\ -->
+                    	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer">
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Header \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateHeader">
+                                        <tr>
+                                            <td valign="top" class="headerContent">
+                                            
+                                            	<!-- // Begin Module: Standard Header Image \\ -->
+                                            	<img src="http://dummyimage.com/600x150&text=600px+maximum+width+image" style="max-width:600px;" id="headerImage" mc:edit="" mc:allowdesigner mc:allowtext />
+                                            	<!-- // End Module: Standard Header Image \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Header \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Body \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
+                                    	<tr>
+                                        	<td valign="top">
+                                            	<table border="0" cellpadding="10" cellspacing="0" width="600">
+                                                	<tr>
+                                                    	<td valign="top" class="bodyContent">
+                                                        
+                                                            <!-- // Begin Module: Plain Content \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div mc:edit="">
+                                                                            <span class="h1">Heading 1</span>
+                                                                            <span class="h2">Heading 2</span>
+                                                                            <span class="h3">Heading 3</span>
+                                                                            <span class="h4">Heading 4</span>
+                                                                            <strong>Basic content module</strong>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the <em>Semantics</em>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary.
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Plain Content \\ -->
+                                                        
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td valign="top">
+                                            	<table border="0" cellpadding="10" cellspacing="0" width="600">
+                                                	<tr>
+                                                        <td valign="top" width="280" class="leftMidColumnContent">
+                                                        
+                                                            <!-- // Begin Module: Social Block with Content \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr mc:repeatable>
+                                                                    <td valign="top">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        	<tr>
+                                                                            	<td colspan="2" valign="top">
+                                                                                	<div mc:edit="">
+                                                                                    	<span class="h4">Stay in the loop</span>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="left" valign="middle" width="22">
+                                                                                	<img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_facebook.4.png" style="margin:0;" />
+                                                                                </td>
+                                                                                <td align="left" valign="middle">
+                                                                                    <div mc:edit="">
+                                                                                        <a href="" target="_blank">Friend us on Facebook</a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="left" valign="middle" width="22">
+                                                                                	<img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_twitter.4.png" style="margin:0;" />
+                                                                                </td>
+                                                                                <td align="left" valign="middle">
+                                                                                    <div mc:edit="">
+                                                                                        <a href="" target="_blank">Follow us on Twitter</a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="left" valign="middle" width="22">
+                                                                                	<img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_envelope.png" style="margin:0;" />
+                                                                                </td>
+                                                                                <td align="left" valign="middle">
+                                                                                    <div mc:edit="">
+                                                                                        <a href="" target="_blank">Forward this to a friend</a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Social Block with Content \\ -->
+                                                        
+                                                        </td>
+                                                        <td valign="top" width="280" class="rightMidColumnContent">
+                                                        
+                                                            <!-- // Begin Module: Left Side Image with Content \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr mc:repeatable>
+                                                                    <td valign="top">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td valign="top">
+                                                                                   <img src="http://dummyimage.com/100" style="margin-right:10px; margin-bottom:0; max-width:100px;" class="sidebarImage" mc:edit="" />
+                                                                                </td>
+                                                                                <td valign="top">
+                                                                                    <div mc:edit="sidebar">
+                                                                                        <strong>Left side image with content.</strong> Far far away, behind the word mountains.
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Left Side Image with Content \\ -->
+                                                        
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    	<tr>
+                                        	<td valign="top">
+                                            	<table border="0" cellpadding="10" cellspacing="0" width="600">
+                                                	<tr>
+                                                    	<td valign="top" width="180" class="leftLowerColumnContent">
+                                                        
+                                                            <!-- // Begin Module: Image with Content \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr mc:repeatable>
+                                                                    <td valign="top">
+                                                                        <img src="http://dummyimage.com/160" style="max-width:160px;" class="sidebarImage" mc:edit="sidebar_image" />
+                                                                        <div mc:edit="">
+                                                                            <span class="h4">Heading 4</span>
+                                                                            <strong>Image module with content</strong>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Image with Content \\ -->
+                                                        
+                                                        </td>
+                                                        <td valign="top" width="180" class="centerLowerColumnContent">
+                                                        
+                                                            <!-- // Begin Module: Image with Content \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr mc:repeatable>
+                                                                    <td valign="top">
+                                                                        <img src="http://dummyimage.com/160" style="max-width:160px;" class="sidebarImage" mc:edit="sidebar_image" />
+                                                                        <div mc:edit="">
+                                                                            <span class="h4">Heading 4</span>
+                                                                            <strong>Image module with content</strong>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Image with Content \\ -->
+                                                        
+                                                        </td>
+                                                        <td valign="top" width="180" class="rightLowerColumnContent">
+                                                        
+                                                            <!-- // Begin Module: Image with Content \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr mc:repeatable>
+                                                                    <td valign="top">
+                                                                        <img src="http://dummyimage.com/160" style="max-width:160px;" class="sidebarImage" mc:edit="sidebar_image" />
+                                                                        <div mc:edit="">
+                                                                            <span class="h4">Heading 4</span>
+                                                                            <strong>Image module with content</strong>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Image with Content \\ -->
+                                                        
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Body \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Footer \\ -->
+                                	<table border="0" cellpadding="10" cellspacing="0" width="600" id="templateFooter">
+                                    	<tr>
+                                        	<td valign="top" class="footerContent">
+                                            
+                                                <!-- // Begin Module: Standard Footer \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="middle" id="social">
+                                                            <div mc:edit="">
+                                                                <a href="*|TWITTER:PROFILE_URL|*">Follow on Twitter</a> | <a href="*|FACEBOOK:PROFILE_URL|*">Friend on Facebook</a> | <a href="*|FORWARD|*">Forward to a friend</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" style="padding:20px 10px;">
+                                                            <div mc:edit="">
+                                                                *|IF:LIST|*
+                                                                <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+                                                                <br />
+                                                                <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                                                                *|LIST:DESCRIPTION|*
+                                                                <br />
+                                                                <strong>Our mailing address is:</strong>
+                                                                <br />
+                                                                *|HTML:LIST_ADDRESS_HTML|*
+                                                                <br />
+                                                                <!-- *|END:IF|* -->
+                                                                <br />    
+                                                                *|ELSE:|*
+                                                                <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                                                                <em>Copyright &copy; *|CURRENT_YEAR|* *|USER:COMPANY|*, All rights reserved.</em>
+                                                                <br />
+                                                                <strong>Our mailing address is:</strong>
+                                                                <br />
+                                                                *|USER:ADDRESS_HTML|*
+                                                                <br />
+                                                                <!-- *|END:IF|* -->
+                                                                *|END:IF|*
+                                                                <br />
+                                                                <br />
+                                                                *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="middle" id="utility">
+                                                            <div mc:edit="">
+                                                                <a href="*|UNSUB|*">Unsubscribe from this list</a> | <a href="*|UPDATE_PROFILE|*">Update subscription preferences</a><!-- *|IFNOT:ARCHIVE_PAGE|* --> | <a href="*|ARCHIVE|*">View email in browser</a><!-- *|END:IF|* -->
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Footer \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Footer \\ -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
