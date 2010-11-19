@@ -131,7 +131,7 @@
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:10px;
 				/*@editable*/ line-height:100%;
-				/*@editable*/ text-align:center;
+				/*@editable*/ text-align:left;
 			}
 
 			/**
@@ -150,6 +150,11 @@
 				height:auto;
 				margin-bottom:10px;
 				max-width:280px;
+			}
+			
+			.preheaderContent div img{
+				height:auto;
+				max-width:600px;
 			}
 
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
@@ -341,13 +346,13 @@
                                     <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                     	<tr>
                                         	<td valign="top">
-                                            	<div mc:edit="std_preheader">
-                                                	<!-- *|IFNOT:ARCHIVE_PAGE|* -->Is this email not displaying correctly? <a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.<!-- *|END:IF|* -->
+                                            	<div mc:edit="std_preheader_content">
+                                                	Use one or two sentences in this area to offer a teaser of your email's content. Text here will show in a preview area in some email clients.
                                                 </div>
                                             </td>
                                         </tr>
                                     </table>
-                                	<!-- // Begin Module: Standard Preheader \\ -->
+                                	<!-- // End Module: Standard Preheader \\ -->
                                 
                                 </td>
                             </tr>
@@ -387,9 +392,12 @@
                                                                 <span class="h2">Heading 2</span>
                                                                 <span class="h3">Heading 3</span>
                                                                 <span class="h4">Heading 4</span>
-                                                                <strong>Basic content module</strong>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the <em>Semantics</em>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary.
+                                                                <strong>Getting started:</strong> Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content!
+                                                                <br />
+                                                                <br />
+                                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "styles" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "remove formatting" button to strip the text of any formatting and reset your style.
                                                             </div>
-                                                        </td>
+														</td>
                                                     </tr>
                                                 </table>
                                                 <!-- // End Module: Standard Content \\ -->

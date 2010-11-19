@@ -12,14 +12,14 @@
 			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
 			body{width:100% !important;} /* Force Hotmail to display emails at full width */
 			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
-			
+
 			/* Reset Styles */
 			body{margin:0; padding:0;}
 			img{border:none; font-size:14px; font-weight:bold; height:auto; line-height:100%; outline:none; text-decoration:none; text-transform:capitalize;}
 			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
-			
+
 			/* Template Styles */
-			
+
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COMMON PAGE ELEMENTS /\/\/\/\/\/\/\/\/\/\ */
 			
 			/**
@@ -200,24 +200,105 @@
 				max-width:600px;
 			}
 			
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY & FULL-WIDTH BAND /\/\/\/\/\/\/\/\/\/\ */
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
 			
 			/**
 			* @tab Body
 			* @section body style
 			* @tip Set the background color for your email's body area.
 			*/
-			#templateContainer, .bodyContent, .fullWidthBandContent{
+			#templateContainer, .bodyContent{
 				/*@editable*/ background-color:#FDFDFD;
 			}
-			
+
 			/**
 			* @tab Body
 			* @section body text
 			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
 			* @theme main
 			*/
-			.bodyContent div, .fullWidthBandContent div{
+			.bodyContent div{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			.bodyContent div a:link, .bodyContent div a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.bodyContent img{
+				display:inline;
+				margin-bottom:10px;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: SIDEBAR /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Sidebar
+			* @section sidebar style
+			* @tip Set the background color and border for your email's sidebar area.
+			*/
+			#templateSidebar{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border-right:0;
+			}
+
+			/**
+			* @tab Sidebar
+			* @section sidebar text
+			* @tip Set the styling for your email's sidebar text. Choose a size and color that is easy to read.
+			*/
+			.sidebarContent div{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Sidebar
+			* @section sidebar link
+			* @tip Set the styling for your email's sidebar links. Choose a color that helps them stand out from your text.
+			*/
+			.sidebarContent div a:link, .sidebarContent div a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.sidebarContent img{
+				display:inline;
+				margin-bottom:10px;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COLUMNS; LEFT, CENTER, RIGHT /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Columns
+			* @section left column text
+			* @tip Set the styling for your email's left column text. Choose a size and color that is easy to read.
+			*/
+			.leftColumnContent{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+			
+			/**
+			* @tab Columns
+			* @section left column text
+			* @tip Set the styling for your email's left column text. Choose a size and color that is easy to read.
+			*/
+			.leftColumnContent div{
 				/*@editable*/ color:#505050;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:14px;
@@ -226,177 +307,99 @@
 			}
 			
 			/**
-			* @tab Body
-			* @section body link
-			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			* @tab Columns
+			* @section left column link
+			* @tip Set the styling for your email's left column links. Choose a color that helps them stand out from your text.
 			*/
-			.bodyContent div a:link, .bodyContent div a:visited, .fullWidthBandContent div a:link, .fullWidthBandContent div a:visited{
+			.leftColumnContent div a:link, .leftColumnContent div a:visited{
 				/*@editable*/ color:#336699;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
-			
-			.bodyContent img, .fullWidthBandContent img{
+
+			.leftColumnContent img{
 				display:inline;
 				margin-bottom:10px;
 			}
 
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COLUMNS; ONE, TWO, THREE, FOUR /\/\/\/\/\/\/\/\/\/\ */
-			
 			/**
 			* @tab Columns
-			* @section column one text
-			* @tip Set the styling for your email's first column text. Choose a size and color that is easy to read.
+			* @section center column text
+			* @tip Set the styling for your email's center column text. Choose a size and color that is easy to read.
 			*/
-			.columnOneContent{
+			.centerColumnContent{
 				/*@editable*/ background-color:#FFFFFF;
 			}
 			
 			/**
 			* @tab Columns
-			* @section column one text
-			* @tip Set the styling for your email's first column text. Choose a size and color that is easy to read.
+			* @section center column text
+			* @tip Set the styling for your email's center column text. Choose a size and color that is easy to read.
 			*/
-			.columnOneContent div{
+			.centerColumnContent div{
 				/*@editable*/ color:#505050;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:12px;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Columns
+			* @section center column link
+			* @tip Set the styling for your email's center column links. Choose a color that helps them stand out from your text.
+			*/
+			.centerColumnContent div a:link, .centerColumnContent div a:visited{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.centerColumnContent img{
+				display:inline;
+				margin-bottom:10px;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column text
+			* @tip Set the styling for your email's right column text. Choose a size and color that is easy to read.
+			*/
+			.rightColumnContent{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+			
+			/**
+			* @tab Columns
+			* @section right column text
+			* @tip Set the styling for your email's right column text. Choose a size and color that is easy to read.
+			*/
+			.rightColumnContent div{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
 				/*@editable*/ line-height:150%;
 				/*@editable*/ text-align:left;
 			}
 			
 			/**
 			* @tab Columns
-			* @section column one link
-			* @tip Set the styling for your email's first column links. Choose a color that helps them stand out from your text.
+			* @section right column link
+			* @tip Set the styling for your email's right column links. Choose a color that helps them stand out from your text.
 			*/
-			.columnOneContent div a:link, .columnOneContent div a:visited{
+			.rightColumnContent div a:link, .rightColumnContent div a:visited{
 				/*@editable*/ color:#336699;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
-			
-			.columnOneContent img{
+
+			.rightColumnContent img{
 				display:inline;
 				margin-bottom:10px;
 			}
-			
-			/**
-			* @tab Columns
-			* @section column two text
-			* @tip Set the styling for your email's second column text. Choose a size and color that is easy to read.
-			*/
-			.columnTwoContent{
-				/*@editable*/ background-color:#FFFFFF;
-			}
-			
-			/**
-			* @tab Columns
-			* @section column two text
-			* @tip Set the styling for your email's second column text. Choose a size and color that is easy to read.
-			*/
-			.columnTwoContent div{
-				/*@editable*/ color:#505050;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:12px;
-				/*@editable*/ line-height:150%;
-				/*@editable*/ text-align:left;
-			}
-			
-			/**
-			* @tab Columns
-			* @section column two link
-			* @tip Set the styling for your email's second column links. Choose a color that helps them stand out from your text.
-			*/
-			.columnTwoContent div a:link, .columnTwoContent div a:visited{
-				/*@editable*/ color:#336699;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
-			}
-			
-			.columnTwoContent img{
-				display:inline;
-				margin-bottom:10px;
-			}
-			
-			/**
-			* @tab Columns
-			* @section column three text
-			* @tip Set the styling for your email's third column text. Choose a size and color that is easy to read.
-			*/
-			.columnThreeContent{
-				/*@editable*/ background-color:#FFFFFF;
-			}
-			
-			/**
-			* @tab Columns
-			* @section column three text
-			* @tip Set the styling for your email's third column text. Choose a size and color that is easy to read.
-			*/
-			.columnThreeContent div{
-				/*@editable*/ color:#505050;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:12px;
-				/*@editable*/ line-height:150%;
-				/*@editable*/ text-align:left;
-			}
-			
-			/**
-			* @tab Columns
-			* @section column three link
-			* @tip Set the styling for your email's third column links. Choose a color that helps them stand out from your text.
-			*/
-			.columnThreeContent div a:link, .columnThreeContent div a:visited{
-				/*@editable*/ color:#336699;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
-			}
-			
-			.columnThreeContent img{
-				display:inline;
-				margin-bottom:10px;
-			}
-			
-			/**
-			* @tab Columns
-			* @section column four text
-			* @tip Set the styling for your email's fourth column text. Choose a size and color that is easy to read.
-			*/
-			.columnFourContent{
-				/*@editable*/ background-color:#FFFFFF;
-			}
-			
-			/**
-			* @tab Columns
-			* @section column four text
-			* @tip Set the styling for your email's fourth column text. Choose a size and color that is easy to read.
-			*/
-			.columnFourContent div{
-				/*@editable*/ color:#505050;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:12px;
-				/*@editable*/ line-height:150%;
-				/*@editable*/ text-align:left;
-			}
-			
-			/**
-			* @tab Columns
-			* @section column four link
-			* @tip Set the styling for your email's fourth column links. Choose a color that helps them stand out from your text.
-			*/
-			.columnFourContent div a:link, .columnFourContent div a:visited{
-				/*@editable*/ color:#336699;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
-			}
-			
-			.columnFourContent img{
-				display:inline;
-				margin-bottom:10px;
-			}
-			
+
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
-			
+
 			/**
 			* @tab Footer
 			* @section footer style
@@ -407,7 +410,7 @@
 				/*@editable*/ background-color:#FDFDFD;
 				/*@editable*/ border-top:0;
 			}
-			
+
 			/**
 			* @tab Footer
 			* @section footer text
@@ -421,7 +424,7 @@
 				/*@editable*/ line-height:125%;
 				/*@editable*/ text-align:left;
 			}
-			
+
 			/**
 			* @tab Footer
 			* @section footer link
@@ -432,11 +435,11 @@
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
-			
+
 			.footerContent img{
 				display:inline;
 			}
-			
+
 			/**
 			* @tab Footer
 			* @section social bar style
@@ -455,7 +458,7 @@
 			#social div{
 				/*@editable*/ text-align:center;
 			}
-			
+
 			/**
 			* @tab Footer
 			* @section utility bar style
@@ -474,7 +477,7 @@
 			#utility div{
 				/*@editable*/ text-align:center;
 			}
-			
+
 			#monkeyRewards img{
 				max-width:160px;
 			}
@@ -532,116 +535,166 @@
                         	<tr>
                             	<td align="center" valign="top">
                                     <!-- // Begin Template Body \\ -->
-                                	<table border="0" cellpadding="10" cellspacing="0" width="600" id="templateBody">
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
                                     	<tr>
-                                        	<td colspan="4" valign="top" class="bodyContent">
+                                        	<!-- // Begin Sidebar \\  -->
+                                        	<td valign="top" width="200" id="templateSidebar">
+                                            	<table border="0" cellpadding="10" cellspacing="0" width="200">
+                                                	<tr>
+                                                    	<td valign="top" class="sidebarContent">
+                                                        
+                                                            <!-- // Begin Module: Social Block with Icons \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table border="0" cellpadding="0" cellspacing="4">
+                                                                            <tr mc:hideable>
+                                                                                <td align="left" valign="middle" width="16">
+                                                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_facebook.4.png" style="margin:0 !important;" />
+                                                                                </td>
+                                                                                <td align="left" valign="top">
+                                                                                    <div mc:edit="sbwi_link_one">
+                                                                                        <a href="*|FACEBOOK:PROFILEURL|*">Friend on Facebook</a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr mc:hideable>
+                                                                                <td align="left" valign="middle" width="16">
+                                                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_twitter.4.png" style="margin:0 !important;" />
+                                                                                </td>
+                                                                                <td align="left" valign="top">
+                                                                                    <div mc:edit="sbwi_link_two">
+                                                                                        <a href="*|TWITTER:PROFILEURL|*">Follow on Twitter</a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr mc:hideable>
+                                                                                <td align="left" valign="middle" width="16">
+                                                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_envelope.png" style="margin:0 !important;" />
+                                                                                </td>
+                                                                                <td align="left" valign="top">
+                                                                                    <div mc:edit="sbwi_link_three">
+                                                                                        <a href="*|FORWARD|*">Forward to a Friend</a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Social Block with Icons \\ -->
 
-                                                <!-- // Begin Module: Standard Content \\ -->
-                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td valign="top">
-                                                            <div mc:edit="std_content00">
-                                                                <span class="h1">Heading 1</span>
-                                                                <span class="h2">Heading 2</span>
-                                                                <span class="h3">Heading 3</span>
-                                                                <span class="h4">Heading 4</span>
-                                                                <strong>Getting started:</strong> Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content!
-                                                                <br />
-                                                                <br />
-                                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "styles" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "remove formatting" button to strip the text of any formatting and reset your style.
-                                                            </div>
-														</td>
+                                                            <!-- // Begin Module: Top Image with Content \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr mc:repeatable>
+                                                                    <td valign="top">
+                                                                        <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_160.gif" style="max-width:160px;" mc:label="image" mc:edit="tiwc200_image00" />
+                                                                        <div mc:edit="tiwc200_content00">
+			 	                                                            <span class="h4">Heading 4</span>
+			                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Top Image with Content \\ -->
+                                                        
+                                                        </td>
                                                     </tr>
                                                 </table>
-                                                <!-- // End Module: Standard Content \\ -->
-
+                                            </td>
+                                            <!-- // End Sidebar \\ -->
+                                        	<td valign="top">
+                                            	<table border="0" cellpadding="0" cellspacing="0">
+                                                	<tr>
+                                                    	<td valign="top">
+                                                        	<table border="0" cellpadding="10" cellspacing="0">
+                                                            	<tr>
+                                                                	<td valign="top" class="bodyContent">
+                                                        
+                                                                        <!-- // Begin Module: Standard Content \\ -->
+                                                                        <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td valign="top">
+						                                                            <div mc:edit="std_content00">
+						                                                                <span class="h1">Heading 1</span>
+						                                                                <span class="h2">Heading 2</span>
+						                                                                <span class="h3">Heading 3</span>
+						                                                                <span class="h4">Heading 4</span>
+						                                                                <strong>Getting started:</strong> Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content!
+						                                                                <br />
+						                                                                <br />
+						                                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "styles" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "remove formatting" button to strip the text of any formatting and reset your style.
+						                                                            </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- // End Module: Standard Content \\ -->
+                                                                        
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>                                                
                                             </td>
                                         </tr>
-                                    	<tr>
-                                        	<td valign="top" width="130" class="columnOneContent">
-                                            
-                                                <!-- // Begin Module: Top Image with Content \\ -->
-                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
-                                                    <tr mc:repeatable>
-                                                        <td valign="top">
-                                                            <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" style="max-width:110px;" mc:label="image" mc:edit="tiwc150_image00" />
-                                                            <div mc:edit="tiwc150_content00">
- 	                                                            <span class="h4">Heading 4</span>
-                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
-                                                            </div>
+                                        <tr>
+                                        	<td colspan="2" valign="top" width="600">
+                                            	<table border="0" cellpadding="10" cellspacing="0" width="600">
+                                                	<tr>
+                                                    	<td valign="top" width="180" class="leftColumnContent">
+                                                        
+                                                            <!-- // Begin Module: Top Image with Content \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr mc:repeatable>
+                                                                    <td valign="top">
+                                                                        <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_160.gif" style="max-width:160px;" mc:label="image" mc:edit="tiwc200_image01" />
+                                                                        <div mc:edit="tiwc200_content01">
+ 			 	                                                            <span class="h4">Heading 4</span>
+			                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Top Image with Content \\ -->
+                                                        
+                                                        </td>
+                                                        <td valign="top" width="180" class="centerColumnContent">
+                                                        
+                                                            <!-- // Begin Module: Top Image with Content \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr mc:repeatable>
+                                                                    <td valign="top">
+                                                                        <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_160.gif" style="max-width:160px;" mc:label="image" mc:edit="tiwc200_image02" />
+                                                                        <div mc:edit="tiwc200_content02">
+			 	                                                            <span class="h4">Heading 4</span>
+			                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Top Image with Content \\ -->
+                                                        
+                                                        </td>
+                                                        <td valign="top" width="180" class="rightColumnContent">
+                                                        
+                                                            <!-- // Begin Module: Top Image with Content \\ -->
+                                                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                                <tr mc:repeatable>
+                                                                    <td valign="top">
+                                                                        <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_160.gif" style="max-width:160px;" mc:label="image" mc:edit="tiwc200_image03" />
+                                                                        <div mc:edit="tiwc200_content03">
+			 	                                                            <span class="h4">Heading 4</span>
+			                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- // End Module: Top Image with Content \\ -->
+                                                        
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                <!-- // End Module: Top Image with Content \\ -->
-                                            
-                                            </td>
-                                        	<td valign="top" width="130" class="columnTwoContent">
-                                            
-                                                <!-- // Begin Module: Top Image with Content \\ -->
-                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
-                                                    <tr mc:repeatable>
-                                                        <td valign="top">
-                                                            <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" style="max-width:110px;" mc:label="image" mc:edit="tiwc150_image01" />
-                                                            <div mc:edit="tiwc150_content01">
- 	                                                            <span class="h4">Heading 4</span>
-                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // End Module: Top Image with Content \\ -->
-                                            
-                                            </td>
-                                        	<td valign="top" width="130" class="columnThreeContent">
-                                            
-                                                <!-- // Begin Module: Top Image with Content \\ -->
-                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
-                                                    <tr mc:repeatable>
-                                                        <td valign="top">
-                                                            <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" style="max-width:110px;" mc:label="image" mc:edit="tiwc150_image02" />
-                                                            <div mc:edit="tiwc150_content02">
- 	                                                            <span class="h4">Heading 4</span>
-                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // End Module: Top Image with Content \\ -->
-                                            
-                                            </td>
-                                        	<td valign="top" width="130" class="columnFourContent">
-                                            
-                                                <!-- // Begin Module: Top Image with Content \\ -->
-                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
-                                                    <tr mc:repeatable>
-                                                        <td valign="top">
-                                                            <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" style="max-width:110px;" mc:label="image" mc:edit="tiwc150_image03" />
-                                                            <div mc:edit="tiwc150_content03">
- 	                                                            <span class="h4">Heading 4</span>
-                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // End Module: Top Image with Content \\ -->
-                                            
-                                            </td>
-                                        </tr>
-                                    	<tr>
-                                        	<td colspan="4" valign="top" class="fullWidthBandContent">
-
-                                                <!-- // Begin Module: Standard Content \\ -->
-                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
-                                                    <tr>
-                                                        <td valign="top">
-                                                            <div mc:edit="std_content01">
-                                                                <strong>Basic content area</strong>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the <em>Semantics</em>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary.
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // End Module: Standard Content \\ -->
-
                                             </td>
                                         </tr>
                                     </table>

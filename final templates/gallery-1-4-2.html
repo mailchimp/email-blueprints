@@ -131,7 +131,7 @@
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:10px;
 				/*@editable*/ line-height:100%;
-				/*@editable*/ text-align:center;
+				/*@editable*/ text-align:left;
 			}
 			
 			/**
@@ -143,6 +143,11 @@
 				/*@editable*/ color:#336699;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
+			}
+			
+			.preheaderContent div img{
+				height:auto;
+				max-width:600px;
 			}
 			
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
@@ -563,17 +568,22 @@
                             <tr>
                                 <td valign="top" class="preheaderContent">
                                 
-                                	<!-- // Begin Module: Standard Preheader \\ -->
+                                	<!-- // Begin Module: Standard Preheader \ -->
                                     <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                     	<tr>
-                                        	<td valign="top" class="preheaderContent">
-                                            	<div mc:edit="std_preheader">
-                                                	<!-- *|IFNOT:ARCHIVE_PAGE|* -->Is this email not displaying correctly? <a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.<!-- *|END:IF|* -->
+                                        	<td valign="top">
+                                            	<div mc:edit="std_preheader_content">
+                                                	Use one or two sentences in this area to offer a teaser of your email's content. Text here will show in a preview area in some email clients.
+                                                </div>
+                                            </td>
+                                            <td valign="top" width="180">
+                                            	<div mc:edit="std_preheader_links">
+                                                	<!-- *|IFNOT:ARCHIVE_PAGE|* -->Is this email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.<!-- *|END:IF|* -->
                                                 </div>
                                             </td>
                                         </tr>
                                     </table>
-                                	<!-- // Begin Module: Standard Preheader \\ -->
+                                	<!-- // End Module: Standard Preheader \ -->
                                 
                                 </td>
                             </tr>
@@ -613,9 +623,12 @@
                                                                 <span class="h2">Heading 2</span>
                                                                 <span class="h3">Heading 3</span>
                                                                 <span class="h4">Heading 4</span>
-                                                                <strong>Basic content module</strong>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the <em>Semantics</em>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary.
+                                                                <strong>Getting started:</strong> Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content!
+                                                                <br />
+                                                                <br />
+                                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "styles" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "remove formatting" button to strip the text of any formatting and reset your style.
                                                             </div>
-                                                        </td>
+														</td>
                                                     </tr>
                                                 </table>
                                                 <!-- // End Module: Standard Content \\ -->
@@ -631,8 +644,8 @@
                                                         <td valign="top">
                                                             <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" style="max-width:110px;" mc:label="image" mc:edit="tiwc150_image00" />
                                                             <div mc:edit="tiwc150_content00">
-                                                                <span class="h4">Heading 4</span>
-                                                                <strong>Image module with content</strong>. Far far away, behind the word mountains live the blind texts.
+ 	                                                            <span class="h4">Heading 4</span>
+                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -648,8 +661,8 @@
                                                         <td valign="top">
                                                             <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" style="max-width:110px;" mc:label="image" mc:edit="tiwc150_image01" />
                                                             <div mc:edit="tiwc150_content01">
-                                                                <span class="h4">Heading 4</span>
-                                                                <strong>Image module with content</strong>. Far far away, behind the word mountains live the blind texts.
+ 	                                                            <span class="h4">Heading 4</span>
+                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -665,8 +678,8 @@
                                                         <td valign="top">
                                                             <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" style="max-width:110px;" mc:label="image" mc:edit="tiwc150_image02" />
                                                             <div mc:edit="tiwc150_content02">
-                                                                <span class="h4">Heading 4</span>
-                                                                <strong>Image module with content</strong>. Far far away, behind the word mountains live the blind texts.
+ 	                                                            <span class="h4">Heading 4</span>
+                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -682,8 +695,8 @@
                                                         <td valign="top">
                                                             <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" style="max-width:110px;" mc:label="image" mc:edit="tiwc150_image03" />
                                                             <div mc:edit="tiwc150_content03">
-                                                                <span class="h4">Heading 4</span>
-                                                                <strong>Image module with content</strong>. Far far away, behind the word mountains live the blind texts.
+ 	                                                            <span class="h4">Heading 4</span>
+                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -701,8 +714,9 @@
                                                         <td valign="top">
                                                             <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_260.gif" style="max-width:260px;" mc:edit="tiwc300_image00" />
                                                             <div mc:edit="tiwc300_content00">
-                                                                <span class="h4">Heading 4</span>
-                                                                <strong>Image module with content</strong>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+ 	                                                           <span class="h4">Heading 4</span>
+                                                               <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
+
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -718,8 +732,9 @@
                                                         <td valign="top">
                                                             <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_260.gif" style="max-width:260px;" mc:edit="tiwc300_image01" />
                                                             <div mc:edit="tiwc300_content01">
-                                                                <span class="h4">Heading 4</span>
-                                                                <strong>Image module with content</strong>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+ 	                                                           <span class="h4">Heading 4</span>
+                                                               <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
+
                                                             </div>
                                                         </td>
                                                     </tr>
