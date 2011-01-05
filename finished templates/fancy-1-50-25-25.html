@@ -45,7 +45,7 @@
 			* @tab Page
 			* @section heading 1
 			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
-			* @theme heading1
+			* @style heading 1
 			*/
 			h1, .h1{
 				/*@editable*/ color:#202020;
@@ -54,15 +54,18 @@
 				/*@editable*/ font-size:34px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
 				margin-bottom:10px;
+				margin-left:0;
 				/*@editable*/ text-align:left;
 			}
-			
+
 			/**
 			* @tab Page
 			* @section heading 2
 			* @tip Set the styling for all second-level headings in your emails.
-			* @theme heading2
+			* @style heading 2
 			*/
 			h2, .h2{
 				/*@editable*/ color:#202020;
@@ -71,15 +74,18 @@
 				/*@editable*/ font-size:30px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
 				margin-bottom:10px;
+				margin-left:0;
 				/*@editable*/ text-align:left;
 			}
-			
+
 			/**
 			* @tab Page
 			* @section heading 3
 			* @tip Set the styling for all third-level headings in your emails.
-			* @theme heading3
+			* @style heading 3
 			*/
 			h3, .h3{
 				/*@editable*/ color:#202020;
@@ -88,15 +94,18 @@
 				/*@editable*/ font-size:26px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
 				margin-bottom:10px;
+				margin-left:0;
 				/*@editable*/ text-align:left;
 			}
-			
+
 			/**
 			* @tab Page
 			* @section heading 4
 			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
-			* @theme heading4
+			* @style heading 4
 			*/
 			h4, .h4{
 				/*@editable*/ color:#202020;
@@ -105,7 +114,10 @@
 				/*@editable*/ font-size:22px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
 				margin-bottom:10px;
+				margin-left:0;
 				/*@editable*/ text-align:left;
 			}
 			
@@ -145,10 +157,7 @@
 				/*@editable*/ text-decoration:underline;
 			}
 			
-			.preheaderContent div img{
-				height:auto;
-				max-width:600px;
-			}
+
 			
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
 			
@@ -159,15 +168,10 @@
 			* @theme header
 			*/
 			#templateHeader{
-				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ background-color:#D8E2EA;
 				/*@editable*/ border-bottom:0;
 			}
 			
-			/**
-			* @tab Header
-			* @section header text
-			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
-			*/
 			/**
 			* @tab Header
 			* @section header text
@@ -238,7 +242,7 @@
 			
 			.bodyContent img{
 				display:inline;
-				margin-bottom:10px;
+				height:auto;
 			}
 			
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COLUMNS; LEFT, CENTER, RIGHT /\/\/\/\/\/\/\/\/\/\ */
@@ -278,7 +282,7 @@
 			
 			.leftColumnContent img{
 				display:inline;
-				margin-bottom:10px;
+				height:auto;
 			}
 			/**
 			* @tab Columns
@@ -315,7 +319,7 @@
 			
 			.centerColumnContent img{
 				display:inline;
-				margin-bottom:10px;
+				height:auto;
 			}
 			
 			/**
@@ -353,7 +357,7 @@
 			
 			.rightColumnContent img{
 				display:inline;
-				margin-bottom:10px;
+				height:auto;
 			}
 			
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
@@ -402,10 +406,11 @@
 			* @tab Footer
 			* @section social bar style
 			* @tip Set the background color and border for your email's footer social bar.
+			* @theme footer
 			*/
 			#social{
 				/*@editable*/ background-color:#FAFAFA;
-				/*@editable*/ border:1px solid #F5F5F5;
+				/*@editable*/ border:0;
 			}
 			
 			/**
@@ -421,10 +426,11 @@
 			* @tab Footer
 			* @section utility bar style
 			* @tip Set the background color and border for your email's footer utility bar.
+			* @theme footer
 			*/
 			#utility{
 				/*@editable*/ background-color:#FDFDFD;
-				/*@editable*/ border-top:1px solid #F5F5F5;
+				/*@editable*/ border:0;
 			}
 
 			/**
@@ -437,7 +443,7 @@
 			}
 			
 			#monkeyRewards img{
-				max-width:160px;
+				max-width:190px;
 			}
 		</style>
 	</head>
@@ -456,14 +462,16 @@
                                     	<tr>
                                         	<td valign="top">
                                             	<div mc:edit="std_preheader_content">
-                                                	Use one or two sentences in this area to offer a teaser of your email's content. Text here will show in a preview area in some email clients.
+                                                	 Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients and in Facebook news feed posts.
                                                 </div>
                                             </td>
-                                            <td valign="top" width="180">
+                                            <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+											<td valign="top" width="190">
                                             	<div mc:edit="std_preheader_links">
-                                                	<!-- *|IFNOT:ARCHIVE_PAGE|* -->Is this email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.<!-- *|END:IF|* -->
+                                                	Is this email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
                                                 </div>
                                             </td>
+											<!-- *|END:IF|* -->
                                         </tr>
                                     </table>
                                 	<!-- // End Module: Standard Preheader \ -->
@@ -493,19 +501,19 @@
                         	<tr>
                             	<td align="center" valign="top">
                                     <!-- // Begin Template Body \\ -->
-                                	<table border="0" cellpadding="10" cellspacing="0" width="600" id="templateBody">
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
                                     	<tr>
                                         	<td colspan="3" valign="top" class="bodyContent">
                                             
                                                 <!-- // Begin Module: Standard Content \\ -->
-                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td valign="top">
                                                             <div mc:edit="std_content00">
-                                                                <span class="h1">Heading 1</span>
-                                                                <span class="h2">Heading 2</span>
-                                                                <span class="h3">Heading 3</span>
-                                                                <span class="h4">Heading 4</span>
+                                                                <h1 class="h1">Heading 1</h1>
+                                                                <h2 class="h2">Heading 2</h2>
+                                                                <h3 class="h3">Heading 3</h3>
+                                                                <h4 class="h4">Heading 4</h4>
                                                                 <strong>Getting started:</strong> Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content!
                                                                 <br />
                                                                 <br />
@@ -522,12 +530,12 @@
                                         	<td valign="top" width="280" class="leftColumnContent">
                                             
                                                 <!-- // Begin Module: Top Image with Content \\ -->
-                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr mc:repeatable>
                                                         <td valign="top">
                                                             <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_260.gif" style="max-width:260px;" mc:label="image" mc:edit="tiwc300_image00" />
                                                             <div mc:edit="tiwc300_content00">
- 	                                                           <span class="h4">Heading 4</span>
+ 	                                                           <h4 class="h4">Heading 4</h4>
                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
 
                                                             </div>
@@ -540,12 +548,12 @@
                                         	<td valign="top" width="130" class="centerColumnContent">
                                             
                                                 <!-- // Begin Module: Top Image with Content \\ -->
-                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr mc:repeatable>
                                                         <td valign="top">
                                                             <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" style="max-width:110px;" mc:label="image" mc:edit="tiwc150_image00" />
                                                             <div mc:edit="tiwc150_content00">
- 	                                                           <span class="h4">Heading 4</span>
+ 	                                                           <h4 class="h4">Heading 4</h4>
                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
 
                                                             </div>
@@ -558,12 +566,12 @@
                                         	<td valign="top" width="130" class="rightColumnContent">
                                             
                                                 <!-- // Begin Module: Top Image with Content \\ -->
-                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr mc:repeatable>
                                                         <td valign="top">
                                                             <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_110.gif" style="max-width:110px;" mc:label="image" mc:edit="tiwc150_image01" />
                                                             <div mc:edit="tiwc150_content01">
- 	                                                           <span class="h4">Heading 4</span>
+ 	                                                           <h4 class="h4">Heading 4</h4>
                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
 
                                                             </div>
@@ -590,38 +598,28 @@
                                                     <tr>
                                                         <td colspan="2" valign="middle" id="social">
                                                             <div mc:edit="std_social">
-                                                                &nbsp;<a href="*|TWITTER:PROFILE_URL|*">follow on Twitter</a> | <a href="*|FACEBOOK:PROFILE_URL|*">friend on Facebook</a> | <a href="*|FORWARD|*">forward to a friend</a>&nbsp;
+                                                                &nbsp;<a href="*|TWITTER:PROFILEURL|*">follow on Twitter</a> | <a href="*|FACEBOOK:PROFILEURL|*">friend on Facebook</a> | <a href="*|FORWARD|*">forward to a friend</a>&nbsp;
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td valign="top" width="370">
+                                                        <td valign="top" width="350">
                                                             <br />
                                                             <div mc:edit="std_footer">
-                                                                *|IF:LIST|*
                                                                 <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
                                                                 <br />
-                                                                <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                                                                *|IFNOT:ARCHIVE_PAGE|*
                                                                 *|LIST:DESCRIPTION|*
                                                                 <br />
                                                                 <strong>Our mailing address is:</strong>
                                                                 <br />
                                                                 *|HTML:LIST_ADDRESS_HTML|*
                                                                 <br />
-                                                                <!-- *|END:IF|* -->
-                                                                *|ELSE:|*
-                                                                <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                                                <em>Copyright &copy; *|CURRENT_YEAR|* *|USER:COMPANY|*, All rights reserved.</em>
-                                                                <br />
-                                                                <strong>Our mailing address is:</strong>
-                                                                <br />
-                                                                *|USER:ADDRESS_HTML|*
-                                                                <!-- *|END:IF|* -->
                                                                 *|END:IF|*
                                                             </div>
                                                             <br />
                                                         </td>
-                                                        <td valign="top" width="170" id="monkeyRewards">
+                                                        <td valign="top" width="190" id="monkeyRewards">
                                                             <br />
                                                             <div mc:edit="monkeyrewards">
                                                                 *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
@@ -632,7 +630,7 @@
                                                     <tr>
                                                         <td colspan="2" valign="middle" id="utility">
                                                             <div mc:edit="std_utility">
-                                                                &nbsp;<a href="*|UNSUB|*">unsubscribe from this list</a> | <a href="*|UPDATE_PROFILE|*">update subscription preferences</a><!-- *|IFNOT:ARCHIVE_PAGE|* --> | <a href="*|ARCHIVE|*">view email in browser</a><!-- *|END:IF|* -->&nbsp;
+                                                                &nbsp;<a href="*|UNSUB|*">unsubscribe from this list</a> | <a href="*|UPDATE_PROFILE|*">update subscription preferences</a>*|IFNOT:ARCHIVE_PAGE|* | <a href="*|ARCHIVE|*">view email in browser</a>*|END:IF|*&nbsp;
                                                             </div>
                                                         </td>
                                                     </tr>
