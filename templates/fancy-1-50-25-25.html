@@ -10,12 +10,13 @@
 		<style type="text/css">
 			/* Client-specific Styles */
 			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
-			body{width:100% !important;} /* Force Hotmail to display emails at full width */
+			body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
 			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
 			
 			/* Reset Styles */
 			body{margin:0; padding:0;}
-			img{border:none; font-size:14px; font-weight:bold; height:auto; line-height:100%; outline:none; text-decoration:none; text-transform:capitalize;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table td{border-collapse:collapse;}
 			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
 			
 			/* Template Styles */
@@ -151,7 +152,7 @@
 			* @section preheader link
 			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
 			*/
-			.preheaderContent div a:link, .preheaderContent div a:visited{
+			.preheaderContent div a:link, .preheaderContent div a:visited, /* Yahoo! Mail Override */ .preheaderContent div a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#336699;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
@@ -168,7 +169,7 @@
 			* @theme header
 			*/
 			#templateHeader{
-				/*@editable*/ background-color:#D8E2EA;
+				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-bottom:0;
 			}
 			
@@ -193,7 +194,7 @@
 			* @section header link
 			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 			*/
-			.headerContent a:link, .headerContent a:visited{
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#336699;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
@@ -212,7 +213,7 @@
 			* @tip Set the background color for your email's body area.
 			*/
 			#templateContainer, .bodyContent{
-				/*@editable*/ background-color:#FDFDFD;
+				/*@editable*/ background-color:#FFFFFF;
 			}
 			
 			/**
@@ -234,7 +235,7 @@
 			* @section body link
 			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 			*/
-			.bodyContent div a:link, .bodyContent div a:visited{
+			.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#336699;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
@@ -274,7 +275,7 @@
 			* @section left column link
 			* @tip Set the styling for your email's left column links. Choose a color that helps them stand out from your text.
 			*/
-			.leftColumnContent div a:link, .leftColumnContent div a:visited{
+			.leftColumnContent div a:link, .leftColumnContent div a:visited, /* Yahoo! Mail Override */ .leftColumnContent div a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#336699;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
@@ -311,7 +312,7 @@
 			* @section center column link
 			* @tip Set the styling for your email's center column links. Choose a color that helps them stand out from your text.
 			*/
-			.centerColumnContent div a:link, .centerColumnContent div a:visited{
+			.centerColumnContent div a:link, .centerColumnContent div a:visited, /* Yahoo! Mail Override */ .centerColumnContent div a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#336699;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
@@ -349,7 +350,7 @@
 			* @section right column link
 			* @tip Set the styling for your email's right column links. Choose a color that helps them stand out from your text.
 			*/
-			.rightColumnContent div a:link, .rightColumnContent div a:visited{
+			.rightColumnContent div a:link, .rightColumnContent div a:visited, /* Yahoo! Mail Override */ .rightColumnContent div a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#336699;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
@@ -369,7 +370,7 @@
 			* @theme footer
 			*/
 			#templateFooter{
-				/*@editable*/ background-color:#FDFDFD;
+				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-top:0;
 			}
 			
@@ -392,7 +393,7 @@
 			* @section footer link
 			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
 			*/
-			.footerContent div a:link, .footerContent div a:visited{
+			.footerContent div a:link, .footerContent div a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#336699;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
@@ -429,7 +430,7 @@
 			* @theme footer
 			*/
 			#utility{
-				/*@editable*/ background-color:#FDFDFD;
+				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border:0;
 			}
 
@@ -462,7 +463,7 @@
                                     	<tr>
                                         	<td valign="top">
                                             	<div mc:edit="std_preheader_content">
-                                                	 Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients and in Facebook news feed posts.
+                                                	 Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
                                                 </div>
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
@@ -604,33 +605,26 @@
                                                     </tr>
                                                     <tr>
                                                         <td valign="top" width="350">
-                                                            <br />
                                                             <div mc:edit="std_footer">
-                                                                <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
-                                                                <br />
-                                                                *|IFNOT:ARCHIVE_PAGE|*
-                                                                *|LIST:DESCRIPTION|*
-                                                                <br />
-                                                                <strong>Our mailing address is:</strong>
-                                                                <br />
-                                                                *|HTML:LIST_ADDRESS_HTML|*
-                                                                <br />
-                                                                *|END:IF|*
+																<em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+																<br />
+																*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+																<br />
+																<strong>Our mailing address is:</strong>
+																<br />
+																*|HTML:LIST_ADDRESS_HTML|**|END:IF|* 
                                                             </div>
-                                                            <br />
                                                         </td>
                                                         <td valign="top" width="190" id="monkeyRewards">
-                                                            <br />
                                                             <div mc:edit="monkeyrewards">
                                                                 *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
                                                             </div>
-                                                            <br />
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2" valign="middle" id="utility">
                                                             <div mc:edit="std_utility">
-                                                                &nbsp;<a href="*|UNSUB|*">unsubscribe from this list</a> | <a href="*|UPDATE_PROFILE|*">update subscription preferences</a>*|IFNOT:ARCHIVE_PAGE|* | <a href="*|ARCHIVE|*">view email in browser</a>*|END:IF|*&nbsp;
+                                                                &nbsp;<a href="*|UNSUB|*">unsubscribe from this list</a> | <a href="*|UPDATE_PROFILE|*">update subscription preferences</a>&nbsp;
                                                             </div>
                                                         </td>
                                                     </tr>
