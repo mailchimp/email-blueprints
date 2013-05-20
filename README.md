@@ -11,8 +11,9 @@ All templates have been tested vigorously in all major email clients. If you fin
 Contents
 --------
 
-**/responsive-templates**
-Contains a collection of responsive / mobile-friendly email templates with various layouts.
+**/responsive-templates** contains a collection of responsive / mobile-friendly email templates with various layouts.
 
-**/templates**
-Contains a collection of fixed-width email templates with various layouts.
+**/templates** contains a collection of fixed-width email templates with various layouts.
+
+
+![Bitdeli](https://d2weczhvl823v0.cloudfront.net/mailchimp/Email-Blueprints/trend.png)
