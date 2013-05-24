@@ -15,5 +15,9 @@ Contents
 
 **/templates** contains a collection of fixed-width email templates with various layouts.
 
+Responsive Templates & CSS Inlining
+-----------------------------------
+
+When inlining the CSS in the responsive templates, be sure **not** to include the styles within the media query; they should remain in the &lt;head&gt; of the email. MailChimp inlines the CSS correctly, but many services may not.
 
 ![Bitdeli](https://d2weczhvl823v0.cloudfront.net/mailchimp/Email-Blueprints/trend.png)
