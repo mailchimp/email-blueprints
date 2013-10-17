@@ -45,24 +45,21 @@
 			img{-ms-interpolation-mode: bicubic;} /* Force IE to smoothly render resized images. */
 			body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
 
+			/*////// FRAMEWORK STYLES //////*/
+			.flexibleContainerCell{padding-top:20px; padding-Right:20px; padding-Left:20px;}
+			.flexibleImage{height:auto;}
+			.bottomShim{padding-bottom:20px;}
+			.imageContent, .imageContentLast{padding-bottom:20px;}
+			.nestedContainerCell{padding-top:20px; padding-Right:20px; padding-Left:20px;}
+
 			/*////// GENERAL STYLES //////*/
 			body, #bodyTable{background-color:#F5F5F5;}
 			#bodyCell{padding-top:40px; padding-bottom:40px;}
 			#emailBody{background-color:#FFFFFF; border:1px solid #DDDDDD; border-collapse:separate; border-radius:4px;}
-			.flexibleContainerCell{padding-top:20px; padding-Right:20px; padding-Left:20px;}
-			.flexibleImage{height:auto;}
-			.bottomShim{padding-bottom:20px;}
-
 			h1, h2, h3, h4, h5, h6{color:#202020; font-family:Helvetica; font-size:20px; line-height:125%; text-align:Left;}
-
 			.textContent, .textContentLast{color:#404040; font-family:Helvetica; font-size:16px; line-height:125%; text-align:Left; padding-bottom:20px;}
 			.textContent a, .textContentLast a{color:#2C9AB7; text-decoration:underline;}
-
-			.imageContent, .imageContentLast{padding-bottom:20px;}
-
 			.nestedContainer{background-color:#E5E5E5; border:1px solid #CCCCCC;}
-			.nestedContainerCell{padding-top:20px; padding-Right:20px; padding-Left:20px;}
-
 			.emailButton{background-color:#2C9AB7; border-collapse:separate; border-radius:4px;}
 			.buttonContent{color:#FFFFFF; font-family:Helvetica; font-size:18px; font-weight:bold; line-height:100%; padding:15px; text-align:center;}
 			.buttonContent a{color:#FFFFFF; display:block; text-decoration:none; width:100%;}
@@ -72,15 +69,21 @@
 				/*////// CLIENT-SPECIFIC STYLES //////*/
 				body{width:100% !important; min-width:100% !important;} /* Force iOS Mail to render the email at full width. */
 
-				/*////// GENERAL STYLES //////*/
-				td[id="bodyCell"]{padding-top:10px !important; padding-Right:10px !important; padding-Left:10px !important;}
+				/*////// FRAMEWORK STYLES //////*/
+				/*
+					CSS selectors are written in attribute
+					selector format to prevent Yahoo Mail
+					from rendering media query styles on
+					desktop.
+				*/
 				table[id="emailBody"]{width:100% !important;}
-
 				table[class="flexibleContainer"]{display:block !important; width:100% !important;}
 				img[class="flexibleImage"]{width:100% !important;}
 				table[class="emailButton"]{width:100% !important;}
-
 				td[class="textContentLast"], td[class="imageContentLast"]{padding-top:20px !important;}
+
+				/*////// GENERAL STYLES //////*/
+				td[id="bodyCell"]{padding-top:10px !important; padding-Right:10px !important; padding-Left:10px !important;}
 			}
 		</style>
         <!--
@@ -110,6 +113,11 @@
             	<tr>
                 	<td align="center" valign="top" id="bodyCell">
                     	<!-- EMAIL CONTAINER // -->
+                        <!--
+                        	The table "emailBody" is the email's container.
+                            Its width can be set to 100% for a color band
+                            that spans the width of the page.
+                        -->
                     	<table border="0" cellpadding="0" cellspacing="0" width="600" id="emailBody">
 
 
@@ -122,16 +130,32 @@
 							<tr>
                             	<td align="center" valign="top">
                                 	<!-- CENTERING TABLE // -->
+                                    <!--
+                                    	The centering table keeps the content
+                                        tables centered in the emailBody table,
+                                        in case its width is set to 100%.
+                                    -->
                                 	<table border="0" cellpadding="0" cellspacing="0" width="100%">
                                     	<tr>
                                         	<td align="center" valign="top">
                                             	<!-- FLEXIBLE CONTAINER // -->
+                                                <!--
+                                                	The flexible container has a set width
+                                                    that gets overridden by the media query.
+                                                    Most content tables within can then be
+                                                    given 100% widths.
+                                                -->
                                             	<table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
                                                 	<tr>
                                                     	<td align="center" valign="top" width="600" class="flexibleContainerCell">
 
 
                                                             <!-- CONTENT TABLE // -->
+                                                            <!--
+                                                            	The content table is the first element
+                                                                that's entirely separate from the structural
+                                                                framework of the email.
+                                                            -->
                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                 <tr>
                                                                     <td valign="top" class="textContent">
@@ -171,6 +195,11 @@
 
 
                                                             <!-- CONTENT TABLE // -->
+                                                            <!--
+                                                            	In multi-column content blocks, the
+                                                                content tables are given set widths
+                                                                and the flexibleContainer class.
+                                                            -->
                                                             <table align="Left" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
                                                                 <tr>
                                                                     <td valign="top" class="textContent">
@@ -223,6 +252,13 @@
 
 
                                                             <!-- CONTENT TABLE // -->
+                                                            <!--
+                                                            	The emailButton table's width can be changed
+                                                                to affect the look of the button. To make the
+                                                                button width dependent on the text inside, leave
+                                                                the width blank. When a button is placed in a column,
+                                                                it's helpful to set the width to 100%.
+                                                            -->
                                                             <table border="0" cellpadding="0" cellspacing="0" width="260" class="emailButton">
                                                                 <tr>
                                                                     <td align="center" valign="middle" class="buttonContent">
@@ -419,6 +455,11 @@
 
 
                                                             <!-- CONTENT TABLE // -->
+                                                            <!--
+                                                            	The table cell imageContent has padding
+                                                                applied to the bottom as part of the framework,
+                                                                ensuring images space correctly in Android Gmail.
+                                                            -->
                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                 <tr>
                                                                     <td valign="top" class="imageContent">
@@ -660,6 +701,12 @@
 
 
                                                             <!-- CONTENT TABLE // -->
+                                                            <!--
+                                                            	Keeping the table markup in its original
+                                                                order and swapping the align attribute values
+                                                                allows the tables to wrap in the correct order
+                                                                on small displays.
+                                                            -->
                                                             <table align="Right" border="0" cellpadding="0" cellspacing="0" width="200" class="flexibleContainer">
                                                                 <tr>
                                                                     <td align="Left" valign="top" class="imageContent">
