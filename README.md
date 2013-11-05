@@ -19,6 +19,6 @@ Contents
 Responsive Templates & CSS Inlining
 -----------------------------------
 
-When inlining the CSS in the responsive templates, be sure **not** to include the styles within the media query; they should remain in the head element of the email. MailChimp inlines the CSS correctly, but many services may not.
+When inlining the CSS in the responsive templates, be sure **not** to include the styles within the media query; they should remain in the head element of the email. The MailChimp app and [external CSS inliner](http://beaker.mailchimp.com/inline-css) both inline the CSS correctly, but many services may not.
 
 ![Bitdeli](https://d2weczhvl823v0.cloudfront.net/mailchimp/Email-Blueprints/trend.png)
