@@ -79,12 +79,27 @@
 					from rendering media query styles on
 					desktop.
 				*/
-				table[id="emailBody"]{width:100% !important;}
-				table[class="flexibleContainer"]{width:100% !important;}
-				img[class="flexibleImage"]{width:100% !important;}
+				table[id="emailBody"], table[class="flexibleContainer"]{width:100% !important;}
+
+				/*
+					The following style rule makes any
+					image classed with 'flexibleImage'
+					fluid when the query activates.
+					Make sure you add an inline max-width
+					to those images to prevent them
+					from blowing out. 
+				*/
+				img[class="flexibleImage"]{height:auto !important; width:100% !important;}
+
+				/*
+					Make buttons in the email span the
+					full width of their container, allowing
+					for left- or right-handed ease of use.
+				*/
 				table[class="emailButton"]{width:100% !important;}
 				td[class="buttonContent"]{padding:0 !important;}
 				td[class="buttonContent"] a{padding:15px !important;}
+
 				td[class="textContentLast"], td[class="imageContentLast"]{padding-top:20px !important;}
 
 				/*////// GENERAL STYLES //////*/
@@ -468,7 +483,7 @@
                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                 <tr>
                                                                     <td valign="top" class="imageContent">
-                                                                        <img src="http://placekitten.com/g/1120/800" width="560" class="flexibleImage" />
+                                                                        <img src="http://placekitten.com/g/1120/800" width="560" class="flexibleImage" style="max-width:560px;" />
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -505,7 +520,7 @@
                                                             <table align="Left" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
                                                                 <tr>
                                                                     <td align="Left" valign="top" class="imageContent">
-                                                                        <img src="http://placekitten.com/g/520/520" width="260" class="flexibleImage" />
+                                                                        <img src="http://placekitten.com/g/520/520" width="260" class="flexibleImage" style="max-width:260px;" />
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -516,7 +531,7 @@
                                                             <table align="Right" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
                                                                 <tr>
                                                                     <td align="Left" valign="top" class="imageContentLast">
-                                                                        <img src="http://placekitten.com/g/520/520" width="260" class="flexibleImage" />
+                                                                        <img src="http://placekitten.com/g/520/520" width="260" class="flexibleImage" style="max-width:260px;" />
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -553,7 +568,7 @@
                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                 <tr>
                                                                     <td valign="top" class="imageContentLast">
-                                                                        <img src="http://placekitten.com/g/1120/800" width="560" class="flexibleImage" />
+                                                                        <img src="http://placekitten.com/g/1120/800" width="560" class="flexibleImage" style="max-width:560px;" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -597,7 +612,7 @@
                                                             <table align="Left" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
                                                                 <tr>
                                                                     <td valign="top" class="imageContent">
-                                                                        <img src="http://placekitten.com/g/520/520" width="260" class="flexibleImage" />
+                                                                        <img src="http://placekitten.com/g/520/520" width="260" class="flexibleImage" style="max-width:260px;" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -615,7 +630,7 @@
                                                             <table align="Right" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
                                                                 <tr>
                                                                     <td valign="top" class="imageContentLast">
-                                                                        <img src="http://placekitten.com/g/520/520" width="260" class="flexibleImage" />
+                                                                        <img src="http://placekitten.com/g/520/520" width="260" class="flexibleImage" style="max-width:260px;" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -659,7 +674,7 @@
                                                             <table align="Left" border="0" cellpadding="0" cellspacing="0" width="200" class="flexibleContainer">
                                                                 <tr>
                                                                     <td align="Left" valign="top" class="imageContent">
-                                                                        <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" />
+                                                                        <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" style="max-width:200px;" />
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -715,7 +730,7 @@
                                                             <table align="Right" border="0" cellpadding="0" cellspacing="0" width="200" class="flexibleContainer">
                                                                 <tr>
                                                                     <td align="Left" valign="top" class="imageContent">
-                                                                        <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" />
+                                                                        <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" style="max-width:200px;" />
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -768,7 +783,7 @@
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                             <tr>
                                                                                 <td valign="top" class="imageContent">
-                                                                                    <img src="http://placekitten.com/g/1040/800" width="520" class="flexibleImage" />
+                                                                                    <img src="http://placekitten.com/g/1040/800" width="520" class="flexibleImage" style="max-width:520px;" />
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
@@ -818,7 +833,7 @@
                                                                         <table align="Left" border="0" cellpadding="0" cellspacing="0" width="240" class="flexibleContainer">
                                                                             <tr>
                                                                                 <td valign="top" class="imageContent">
-                                                                                    <img src="http://placekitten.com/g/480/480" width="240" class="flexibleImage" />
+                                                                                    <img src="http://placekitten.com/g/480/480" width="240" class="flexibleImage" style="max-width:240px;" />
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
@@ -836,7 +851,7 @@
                                                                         <table align="Right" border="0" cellpadding="0" cellspacing="0" width="240" class="flexibleContainer">
                                                                             <tr>
                                                                                 <td valign="top" class="imageContentLast">
-                                                                                    <img src="http://placekitten.com/g/480/480" width="240" class="flexibleImage" />
+                                                                                    <img src="http://placekitten.com/g/480/480" width="240" class="flexibleImage" style="max-width:240px;" />
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
@@ -886,7 +901,7 @@
                                                                         <table align="Left" border="0" cellpadding="0" cellspacing="0" width="200" class="flexibleContainer">
                                                                             <tr>
                                                                                 <td align="Left" valign="top" class="imageContent">
-                                                                                    <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" />
+                                                                                    <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" style="max-width:200px;" />
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
@@ -942,7 +957,7 @@
                                                                         <table align="Right" border="0" cellpadding="0" cellspacing="0" width="200" class="flexibleContainer">
                                                                             <tr>
                                                                                 <td align="Left" valign="top" class="imageContent">
-                                                                                    <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" />
+                                                                                    <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" style="max-width:200px;" />
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
