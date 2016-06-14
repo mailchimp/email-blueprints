@@ -73,22 +73,22 @@
 			#bodyCell{
 			/*@editable*/border-top:4px solid #BBBBBB;
 			}
-			/*
-			@tab Page
-			@section email border
-			@tip Set the border for your email.
-			*/
+/*
+@tab Page
+@section email border
+@tip Set the border for your email.
+*/
 			#templateContainer{
 			/*@editable*/border:1px solid #BBBBBB;
 			}
-			/*
-			@tab Page
-			@section heading 1
-			@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
-			@style heading 1
-			*/
+/*
+@tab Page
+@section heading 1
+@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+@style heading 1
+*/
 			h1{
-			/*@editable*/color:#004165 !important;
+			/*@editable*/color:#000 !important;
 			display:block;
 			/*@editable*/font-family:helvetica, arial, sans-serif;
 			/*@editable*/font-size:32px;
@@ -100,16 +100,16 @@
 			margin-right:0;
 			margin-bottom:10px;
 			margin-left:0;
-			text-align:center;
+			text-align:left;
 			}
-			/*
-			@tab Page
-			@section heading 2
-			@tip Set the styling for all second-level headings in your emails.
-			@style heading 2
-			*/
+/*
+@tab Page
+@section heading 2
+@tip Set the styling for all second-level headings in your emails.
+@style heading 2
+*/
 			h2{
-			/*@editable*/color:#004165 !important;
+			/*@editable*/color:#000 !important;
 			display:block;
 			/*@editable*/font-family:helvetica, arial, sans-serif;
 			/*@editable*/font-size:20px;
@@ -121,16 +121,16 @@
 			margin-right:0;
 			margin-bottom:10px;
 			margin-left:0;
-			text-align:center;
+			text-align:left;
 			}
-			/*
-			@tab Page
-			@section heading 3
-			@tip Set the styling for all third-level headings in your emails.
-			@style heading 3
-			*/
+/*
+@tab Page
+@section heading 3
+@tip Set the styling for all third-level headings in your emails.
+@style heading 3
+*/
 			h3{
-			/*@editable*/color:#004165 !important;
+			/*@editable*/color:#000 !important;
 			display:block;
 			/*@editable*/font-family:helvetica, arial, sans-serif;
 			/*@editable*/font-size:22px;
@@ -142,16 +142,16 @@
 			margin-right:0;
 			margin-bottom:10px;
 			margin-left:0;
-			text-align:center;
+			text-align:left;
 			}
-			/*
-			@tab Page
-			@section heading 4
-			@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
-			@style heading 4
-			*/
+/*
+@tab Page
+@section heading 4
+@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+@style heading 4
+*/
 			h4{
-			/*@editable*/color:#808080 !important;
+			/*@editable*/color:#000 !important;
 			display:block;
 			/*@editable*/font-family:helvetica, arial, sans-serif;
 			/*@editable*/font-size:14px;
@@ -163,23 +163,27 @@
 			margin-right:0;
 			margin-bottom:10px;
 			margin-left:0;
-			text-align:center;
+			text-align:left;
 			}
-			/*
-			@tab Header
-			@section preheader style
-			@tip Set the background color and bottom border for your email's preheader area.
-			@theme header
-			*/
+
+			h5 {
+				text-align: center;
+			}
+/*
+@tab Header
+@section preheader style
+@tip Set the background color and bottom border for your email's preheader area.
+@theme header
+*/
 			#templatePreheader{
 			/*@editable*/background-color:#F4F4F4;
 			/*@editable*/border-bottom:1px solid #CCCCCC;
 			}
-			/*
-			@tab Header
-			@section preheader text
-			@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
-			*/
+/*
+@tab Header
+@section preheader text
+@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+*/
 			.preheaderContent{
 			/*@editable*/color:#808080;
 			/*@editable*/font-family:Helvetica;
@@ -187,32 +191,32 @@
 			/*@editable*/line-height:125%;
 			/*@editable*/text-align:left;
 			}
-			/*
-			@tab Header
-			@section preheader link
-			@tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
-			*/
+/*
+@tab Header
+@section preheader link
+@tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+*/
 			.preheaderContent a:link,.preheaderContent a:visited,.preheaderContent a .yshortcuts{
 			/*@editable*/color:#606060;
 			/*@editable*/font-weight:normal;
 			/*@editable*/text-decoration:underline;
 			}
-			/*
-			@tab Header
-			@section header style
-			@tip Set the background color and borders for your email's header area.
-			@theme header
-			*/
+/*
+@tab Header
+@section header style
+@tip Set the background color and borders for your email's header area.
+@theme header
+*/
 			#templateHeader{
 			/*@editable*/background-color:#F4F4F4;
 			/*@editable*/border-top:1px solid #FFFFFF;
 			/*@editable*/border-bottom:1px solid #CCCCCC;
 			}
-			/*
-			@tab Header
-			@section header text
-			@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
-			*/
+/*
+@tab Header
+@section header text
+@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+*/
 			.headerContent{
 			/*@editable*/color:#505050;
 			/*@editable*/font-family:helvetica, arial, sans-serif;
@@ -226,11 +230,11 @@
 			/*@editable*/text-align:left;
 			/*@editable*/vertical-align:middle;
 			}
-			/*
-			@tab Header
-			@section header link
-			@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
-			*/
+/*
+@tab Header
+@section header link
+@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+*/
 			.headerContent a:link,.headerContent a:visited,.headerContent a .yshortcuts{
 			/*@editable*/color:#EB4102;
 			/*@editable*/font-weight:normal;
@@ -240,26 +244,26 @@
 			height:auto;
 			max-width:600px;
 			}
-			/*
-			@tab Body
-			@section body style
-			@tip Set the background color and borders for your email's body area.
-			*/
+/*
+@tab Body
+@section body style
+@tip Set the background color and borders for your email's body area.
+*/
 			#templateBody{
 			/*@editable*/background-color:#F4F4F4;
 			/*@editable*/border-top:1px solid #FFFFFF;
 			/*@editable*/border-bottom:1px solid #CCCCCC;
 			}
-			/*
-			@tab Body
-			@section body text
-			@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-			@theme main
-			*/
+/*
+@tab Body
+@section body text
+@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+@theme main
+*/
 			.bodyContent{
 			/*@editable*/color:#505050;
 			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:20px;
+			/*@editable*/font-size:16px;
 			/*@editable*/line-height:150%;
 			padding-top:20px;
 			padding-right:20px;
@@ -267,11 +271,11 @@
 			padding-left:20px;
 			/*@editable*/text-align:left;
 			}
-			/*
-			@tab Body
-			@section body link
-			@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
-			*/
+/*
+@tab Body
+@section body link
+@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+*/
 			.bodyContent a:link,.bodyContent a:visited,.bodyContent a .yshortcuts{
 			/*@editable*/color:#0faa91;
 			/*@editable*/font-weight:normal;
@@ -282,22 +286,22 @@
 			height:auto;
 			max-width:560px;
 			}
-			/*
-			@tab Footer
-			@section footer style
-			@tip Set the background color and borders for your email's footer area.
-			@theme footer
-			*/
+/*
+@tab Footer
+@section footer style
+@tip Set the background color and borders for your email's footer area.
+@theme footer
+*/
 			#templateFooter{
 			/*@editable*/background-color:#F4F4F4;
 			/*@editable*/border-top:1px solid #FFFFFF;
 			}
-			/*
-			@tab Footer
-			@section footer text
-			@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
-			@theme footer
-			*/
+/*
+@tab Footer
+@section footer text
+@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+@theme footer
+*/
 			.footerContent{
 			/*@editable*/color:#808080;
 			/*@editable*/font-family:georgia,times,times new roman,serif;
@@ -502,7 +506,7 @@
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
 									<tr>
 										<td valign="top" class="headerContent">
-											<img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/2e6615b8-72b7-4b3f-8446-a0f4099dadcd.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:allowdesigner="" mc:allowtext="">
+											<img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/fd796efb-657e-44c2-bbe6-e240d3d36d09.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:allowdesigner="" mc:allowtext="">
 										</td>
 									</tr>
 								</table>
@@ -514,85 +518,37 @@
 								<!-- BEGIN BODY // -->
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
 									<tr>
-										<td valign="top" class="bodyContent" mc:edit="invite_line">
-											<h4>CSIS and [Research Program] cordially invites you to</h4>
-										</td>
-									</tr>
-									<tr>
 										<td valign="top" class="bodyContent" mc:edit="event_name">
-											<h1>The Event's Name Goes Here</h1>
+											<h1>Media Advisory Title</h1>
 										</td>
 									</tr>
 									<tr>
-										<td valign="top" class="bodyContent" mc:edit="participant_1">
-											<h4>A discussion with</h4>
-											<h2>Adenoid Hynkel, Ruler of Tomania</h2>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										<td valign="top" class="bodyContent" mc:edit="first_graf">
+											<strong>WASHINGTON, June 14, 2016:</strong>&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 										</td>
 									</tr>
 									<tr>
-										<td valign="top" class="bodyContent" mc:edit="participant_2">
-											<h2>Adm. Gerard DuGalle, United Earth Directorate Expeditionary Force</h2>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										<td valign="top" class="bodyContent" mc:edit="supplementary">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 										</td>
 									</tr>
+									<tr>
+                                        	<td class="bodyContent" style="padding-top:0; padding-bottom:0;" mc:edit="optional_image">
+                                            	<img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/4cb9f3d8-04b8-47a4-9add-7154bd001f8e.jpg" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:allowtext="">
+                                            </td>
+                                        </tr>
+																				<tr>
+																					<td valign="top" class="bodyContent" mc:edit="csis_credits">
+																						<h5>###</h5>
+																						<h5>
+The Center for Strategic and International Studies (CSIS) is a bipartisan, nonprofit organization founded in 1962 and headquartered in Washington, D.C. It seeks to advance global security and prosperity by providing strategic insights and policy solutions to decisionmakers.</h5>
+																					</td>
+																				</tr>
 
-
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="participant_3">
-											<h2>Jean Luc-Picard, Captain, USS Enterprise</h2>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-										</td>
-									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="participant_4">
-											<h2>Commander Shephard, Galactic Savior</h2>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-										</td>
-									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="moderator">
-											<h4>Moderated by</h4>
-											<h2>Eduard Khil, "Trololo Man"</h2>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-										</td>
-									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="date">
-											<h1>Monday, July 4, 2016</h1>
-											<h1>3:30 p.m. to 5:00 p.m.</h1>
-										</td>
-									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="sponsor">
-											<h5>Made possible with sponsorship from the LOLOLOLOL Corporation.</h5>
-										</td>
-									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="place">
-											<h5>2ND FLOOR CONFERENCE CENTER
-												CENTER FOR STRATEGIC &amp; INTERNATIONAL STUDIES
-												1616 RHODE ISLAND AVE NW, WASHINGTON, D.C. 20036</h5>
-
-											</td>
-										</tr>
-										<tr>
-											<td valign="top" class="bodyContent" mc:edit="register">
-												<a href="mailto:IntlSecurity@csis.org?subject=RSVP%3A%20Maritime%20Security%20Dialogue" target="_blank">
-													<img alt="registration button" src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/dbd120d7-e5ad-4cf0-a94f-b0bb46f2a28a.png" />
-												</a>
-												<br />
-												Or register via email to <a href="mailto:missiledefense@csis.org">missiledefense@csis.org</a>
-											</td>
-										</tr>
 										<tr>
 											<td valign="top" class="bodyContent" mc:edit="">
-												Your friends might be interested? <a href="*|FORWARD|*">Forward this email to a friend</a>
-											</td>
-										</tr>
-										<tr>
-											<td valign="top" class="bodyContent" mc:edit="">
-												<a href="https://twitter.com/missile_defense" target="_blank"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/4bde2700-3f50-471c-8398-aaf2d39e7ea7.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<a href="*|FORWARD|*"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/7ad0947c-e23a-43b0-bc32-0720c3c5361a.png" /></a>&nbsp;<br>
+												<a href="https://twitter.com/CSIS" target="_blank"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/4bde2700-3f50-471c-8398-aaf2d39e7ea7.png" style="-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;display: inline;max-width: 560px;"></a>   <a href="*|FACEBOOK:PROFILEURL|*"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/a4a0cd19-112c-4480-b04d-b5fc26ca3857.png" style="-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;display: inline;max-width: 560px;"></a>
 											</td>
 										</tr>
 
