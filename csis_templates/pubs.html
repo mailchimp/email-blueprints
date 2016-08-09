@@ -52,10 +52,10 @@
 		}
 		#bodyCell{
 			padding:20px;
-			border-top:4px none #BBBBBB;
 		}
 		#templateContainer{
 			width:600px;
+			border:2px solid #f4f4f4;
 		}
 	/*
 	@tab Page
@@ -73,7 +73,7 @@
 	@theme page
 	*/
 		#bodyCell{
-			/*@editable*/border-top:4px none #BBBBBB;
+			/*@editable*/border-top:4px solid #BBBBBB;
 		}
 	/*
 	@tab Page
@@ -90,7 +90,7 @@
 	@style heading 1
 	*/
 		h1{
-			/*@editable*/color:#004165 !important;
+			/*@editable*/color:#000 !important;
 			display:block;
 			/*@editable*/font-family:helvetica, arial, sans-serif;
 			/*@editable*/font-size:28px;
@@ -98,8 +98,11 @@
 			/*@editable*/font-weight:bold;
 			/*@editable*/line-height:100%;
 			/*@editable*/letter-spacing:normal;
-			margin:0;
-			text-align:center;
+			margin-top:0;
+			margin-right:0;
+			margin-bottom:0;
+			margin-left:0;
+			text-align:left;
 		}
 	/*
 	@tab Page
@@ -108,7 +111,7 @@
 	@style heading 2
 	*/
 		h2{
-			/*@editable*/color:#004165 !important;
+			/*@editable*/color:#000 !important;
 			display:block;
 			/*@editable*/font-family:helvetica, arial, sans-serif;
 			/*@editable*/font-size:20px;
@@ -120,7 +123,7 @@
 			margin-right:0;
 			margin-bottom:10px;
 			margin-left:0;
-			text-align:center;
+			text-align:left;
 		}
 	/*
 	@tab Page
@@ -129,7 +132,7 @@
 	@style heading 3
 	*/
 		h3{
-			/*@editable*/color:#004165 !important;
+			/*@editable*/color:#000 !important;
 			display:block;
 			/*@editable*/font-family:helvetica, arial, sans-serif;
 			/*@editable*/font-size:22px;
@@ -141,7 +144,7 @@
 			margin-right:0;
 			margin-bottom:10px;
 			margin-left:0;
-			text-align:center;
+			text-align:left;
 		}
 	/*
 	@tab Page
@@ -150,7 +153,7 @@
 	@style heading 4
 	*/
 		h4{
-			/*@editable*/color:#808080 !important;
+			/*@editable*/color:#000 !important;
 			display:block;
 			/*@editable*/font-family:helvetica, arial, sans-serif;
 			/*@editable*/font-size:14px;
@@ -158,25 +161,13 @@
 			/*@editable*/font-weight:normal;
 			/*@editable*/line-height:100%;
 			/*@editable*/letter-spacing:normal;
-			margin:10px 0 10px 0;
-			text-align:center;
+			margin-top:0;
+			margin-right:0;
+			margin-bottom:10px;
+			margin-left:0;
+			text-align:left;
 		}
-	/*
-	@tab Page
-	@section heading 5
-	@tip Set the styling for all fifth-level headings in your emails. These should be the smallest of your headings.
-	@style heading 5
-	*/
 		h5{
-			/*@editable*/color:#000 !important;
-			display:block;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:18px;
-			/*@editable*/font-style:normal;
-			/*@editable*/font-weight:normal;
-			/*@editable*/line-height:140%;
-			/*@editable*/letter-spacing:normal;
-			margin:10px 0 10px 0;
 			text-align:center;
 		}
 	/*
@@ -218,9 +209,9 @@
 	@theme header
 	*/
 		#templateHeader{
-			/*@editable*/background-color:#F4F4F4;
-			/*@editable*/border-top:0;
-			/*@editable*/border-bottom:0;
+			/*@editable*/background-color:#ffffff;
+			/*@editable*/border-top:1px none #ffffff;
+			/*@editable*/border-bottom:1px none #ffffff;
 		}
 	/*
 	@tab Header
@@ -253,7 +244,6 @@
 		#headerImage{
 			height:auto;
 			max-width:600px;
-			width:100%;
 		}
 	/*
 	@tab Body
@@ -262,19 +252,8 @@
 	*/
 		#templateBody{
 			/*@editable*/background-color:#ffffff;
-			/*@editable*/border-top:0px solid #FFFFFF;
-			/*@editable*/border-bottom:0px solid #FFFFFF;
-		}
-	/*
-	@tab button
-	@section button style
-	@tip for reg buttons
-	*/
-		img#registrationBtn{
-			/*@tab button
-@section button style
-@tip for reg buttons*/display:block;
-			margin:auto;
+			/*@editable*/border-top:1px none #FFFFFF;
+			/*@editable*/border-bottom:1px none #CCCCCC;
 		}
 	/*
 	@tab Body
@@ -285,13 +264,53 @@
 		.bodyContent{
 			/*@editable*/color:#000;
 			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:20px;
+			/*@editable*/font-size:16px;
 			/*@editable*/line-height:150%;
-			padding-top:5px;
+			padding-top:20px;
 			padding-right:20px;
 			padding-bottom:20px;
 			padding-left:20px;
 			/*@editable*/text-align:left;
+		}
+
+		.typeContent{
+			/*@editable*/color:#000;
+			/*@editable*/font-family:helvetica, arial, sans-serif;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:150%;
+			padding-right:20px;
+			padding-left:20px;
+			/*@editable*/text-align:left;
+		}
+
+		.typeContent p {
+			font-style: italic;
+		}
+
+		.typeContent h2 {
+			padding-top: 15px;
+		}
+
+		.typeContent h3 {
+			font-style:normal;
+		}
+
+		.authorContent{
+			/*@editable*/color:#000;
+			/*@editable*/font-family:helvetica, arial, sans-serif;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:150%;
+			padding-right:20px;
+			padding-left:20px;
+			/*@editable*/text-align:left;
+		}
+
+		.authorContent h2 {
+			padding-top: 15px;
+		}
+
+		.authorContent h3 {
+			font-style:normal;
 		}
 	/*
 	@tab Body
@@ -326,7 +345,7 @@
 	*/
 		.footerContent{
 			/*@editable*/color:#808080;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
+			/*@editable*/font-family:georgia,times,times new roman,serif;
 			/*@editable*/font-size:10px;
 			/*@editable*/line-height:150%;
 			padding-top:20px;
@@ -344,7 +363,7 @@
 	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
 	*/
 		.footerContent a:link,.footerContent a:visited,.footerContent a .yshortcuts,.footerContent a span{
-			/*@editable*/color:#0faa91;
+			/*@editable*/color:#606060;
 			/*@editable*/font-weight:normal;
 			/*@editable*/text-decoration:underline;
 		}
@@ -525,7 +544,7 @@
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
 									<tr>
 										<td valign="top" class="headerContent">
-											<img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/bd22d69d-8fbd-4e8b-9257-a2859e4d095e.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:allowdesigner="" mc:allowtext="">
+											<img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/1d5a3098-5909-4cdc-a2e4-b7021d0441d1.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:allowdesigner="" mc:allowtext="">
 										</td>
 									</tr>
 								</table>
@@ -536,81 +555,45 @@
 							<td align="center" valign="top">
 								<!-- BEGIN BODY // -->
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="invite_line">
-											<h4>CSIS and [Research Program] cordially invites you to</h4>
+                                <tr>
+										<td valign="top" class="bodyContent" mc:edit="content_9">
+			Contact H. Andrew Schwartz at 202.775.3242 | <a href="mailto:aschwartz@csis.org">aschwartz@csis.org</a>
 										</td>
-									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="event_name">
-											<h1>The Event's Name Goes Here</h1>
-										</td>
-									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="participant_1"><h4>A discussion with</h4>
-
-<h2>Adenoid Hynkel</h2>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="participant_2"><h2>Adm. Gerard DuGalle</h2>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
 									</tr>
 
+									<tr>
+										<td valign="top" class="typeContent" mc:edit="type_content"><h3>Commentary/Critical Questions</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</td>
+									</tr>
 
 									<tr>
-										<td valign="top" class="bodyContent" mc:edit="participant_3"><h2>Jean Luc-Picard</h2>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+										<td valign="top" class="authorContent" mc:edit="event_name"><h1>Publication Title</h1>
+                                        <h2>Dr. Michael J. Green and Nicholas Szechenyi</h2>
+																				<h3>August 8, 2016</h3>
+</td>
 									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="participant_4"><h2>Commander Shephard</h2>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="moderator">
-											<h4>Moderated by</h4>
-											<h2>Eduard Khil, "Trololo Man"</h2>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              									<tr>
+										<td valign="top" class="bodyContent" mc:edit="supplementary">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 										</td>
 									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="date">
-											<h1>Monday, July 4, 2016</h1>
-											<h1>3:30 p.m. to 5:00 p.m.</h1>
-										</td>
-									</tr>
-                                     <tr>
-										<td valign="top" class="bodyContent" mc:edit="place">
-											<h5>2nd Floor Conference Center<br>
-												Center for Strategic &amp; International Studies <br>
-												1616 Rhode Island Ave NW, Washington, D.C. 20036</h5>
 
-											</td>
-										</tr>
-                                        <tr>
-											<td valign="top" class="bodyContent" mc:edit="register">
-												<a href="mailto:IntlSecurity@csis.org?subject=RSVP%3A%20Maritime%20Security%20Dialogue" target="_blank">
-													<h5><img alt="registration button" src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/dbd120d7-e5ad-4cf0-a94f-b0bb46f2a28a.png"></h5></a>
-												<h5>Or register via email to <a href="mailto:missiledefense@csis.org">program_email@csis.org</a></h5>
-											</td>
-										</tr>
+																				<tr>
+																					<td valign="top" class="bodyContent" mc:edit="csis_credits">
+																						<h5>###</h5>
+																						<p>
+The Center for Strategic and International Studies (CSIS) is a bipartisan, nonprofit organization founded in 1962 and headquartered in Washington, D.C. It seeks to advance global security and prosperity by providing strategic insights and policy solutions to decisionmakers.</p>
+																					</td>
+																				</tr>
 
-                                        <tr>
-										<td valign="top" class="bodyContent" mc:edit="event_desc">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-										</td>
-									</tr>
-									<tr>
-										<td valign="top" class="bodyContent" mc:edit="sponsor">
-											<h5>Made possible with sponsorship from the LOLOLOLOL Corporation.</h5>
-										</td>
-									</tr>
 										<tr>
-											<td valign="top" id="centerSocial" class="bodyContent" mc:edit="content_7">
-												<h5><a href="https://twitter.com/missile_defense" target="_blank"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/4bde2700-3f50-471c-8398-aaf2d39e7ea7.png"></a>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<a href="*|FORWARD|*"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/7ad0947c-e23a-43b0-bc32-0720c3c5361a.png"></a></h5>
+											<td valign="top" class="bodyContent" mc:edit="content_4"><h5>
+												<a href="https://twitter.com/CSIS" target="_blank"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/4bde2700-3f50-471c-8398-aaf2d39e7ea7.png" style="-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;display: inline;max-width: 560px;"></a>   <a href="*|FACEBOOK:PROFILEURL|*"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/a4a0cd19-112c-4480-b04d-b5fc26ca3857.png" style="-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;display: inline;max-width: 560px;"></a></h5>
 											</td>
 										</tr>
-
 
 
 									</table>
