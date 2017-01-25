@@ -19,7 +19,12 @@
 		.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{
 			line-height:100%;
 		}
-		body,table,td,p,a,li,blockquote{
+		body,table,td,p,li,blockquote{
+			-webkit-text-size-adjust:100%;
+			-ms-text-size-adjust:100%;
+		}
+		a{
+			color:#003366;
 			-webkit-text-size-adjust:100%;
 			-ms-text-size-adjust:100%;
 		}
@@ -132,11 +137,11 @@
 	@style heading 3
 	*/
 		h3{
-			/*@editable*/color:#000 !important;
+			/*@editable*/color:#003366 !important;
 			display:block;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
+			/*@editable*/font-family:arial, sans-serif;
 			/*@editable*/font-size:22px;
-			/*@editable*/font-style:italic;
+			/*@editable*/font-style:bold;
 			/*@editable*/font-weight:normal;
 			/*@editable*/line-height:100%;
 			/*@editable*/letter-spacing:normal;
@@ -171,13 +176,10 @@
 			text-align:center;
 		}
 	/*
-	@tab Header
-	@section preheader style
-	@tip Set the background color and bottom border for your email's preheader area.
-	@theme header
+	@editable
 	*/
-		#templatePreheader{
-			/*@editable*/background-color:#4d6e79;
+		color#003366 importantdisplay:blockfont-family:arial,sans-seriffont-size:18pxfont-style:italicfont-weight:normalline-height:100letter-spacing:normalmargin-top:0margin-right:0margin-bottom:5pxmargin-left:0display:inlinetext-align:left Header preheader style Set the background color and bottom border for your emails preheader area header*#templatePreheader{
+			/*@editable*/background-color:#dddddd;
 			/*@editable*/border-bottom:0;
 		}
 	/*
@@ -186,7 +188,7 @@
 	@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
 	*/
 		.preheaderContent{
-			/*@editable*/color:#f3f3f3;
+			/*@editable*/color:#464646;
 			/*@editable*/font-family:Helvetica;
 			/*@editable*/font-size:10px;
 			/*@editable*/line-height:125%;
@@ -198,7 +200,7 @@
 	@tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
 	*/
 		.preheaderContent a:link,.preheaderContent a:visited,.preheaderContent a .yshortcuts{
-			/*@editable*/color:#ff9288;
+			/*@editable*/color:#003366;
 			/*@editable*/font-weight:normal;
 			/*@editable*/text-decoration:underline;
 		}
@@ -220,15 +222,15 @@
 	*/
 		.headerContent{
 			/*@editable*/color:#505050;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:20px;
+			/*@editable*/font-family:arial, sans-serif;
+			/*@editable*/font-size:16px;
 			/*@editable*/font-weight:bold;
 			/*@editable*/line-height:100%;
 			/*@editable*/padding-top:0;
 			/*@editable*/padding-right:0;
 			/*@editable*/padding-bottom:0;
 			/*@editable*/padding-left:0;
-			/*@editable*/text-align:left;
+			/*@editable*/text-align:center;
 			/*@editable*/vertical-align:middle;
 		}
 	/*
@@ -237,7 +239,9 @@
 	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 	*/
 		.headerContent a:link,.headerContent a:visited,.headerContent a .yshortcuts{
-			/*@editable*/color:#EB4102;
+			/*@tab Header
+@section header link
+@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.*/color:#003366;
 			/*@editable*/font-weight:normal;
 			/*@editable*/text-decoration:underline;
 		}
@@ -254,6 +258,7 @@
 			/*@editable*/background-color:#ffffff;
 			/*@editable*/border-top:1px none #FFFFFF;
 			/*@editable*/border-bottom:1px none #CCCCCC;
+			margin-top:20px;
 		}
 	/*
 	@tab Body
@@ -263,7 +268,7 @@
 	*/
 		.bodyContent{
 			/*@editable*/color:#000;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
+			/*@editable*/font-family:arial, sans-serif;
 			/*@editable*/font-size:16px;
 			/*@editable*/line-height:150%;
 			padding-top:20px;
@@ -274,7 +279,7 @@
 		}
 		.lowerbodyContent{
 			/*@editable*/color:#000;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
+			/*@editable*/font-family:arial, sans-serif;
 			/*@editable*/font-size:16px;
 			/*@editable*/line-height:120%;
 			padding-right:20px;
@@ -283,7 +288,7 @@
 		}
 		.typeContent{
 			/*@editable*/color:#000;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
+			/*@editable*/font-family:arial, sans-serif;
 			/*@editable*/font-size:16px;
 			/*@editable*/line-height:150%;
 			padding-right:20px;
@@ -301,7 +306,7 @@
 		}
 		.authorContent{
 			/*@editable*/color:#000;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
+			/*@editable*/font-family:arial, sans-serif;
 			/*@editable*/font-size:16px;
 			/*@editable*/line-height:150%;
 			padding-right:20px;
@@ -320,7 +325,7 @@
 	@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 	*/
 		.bodyContent a:link,.bodyContent a:visited,.bodyContent a .yshortcuts{
-			/*@editable*/color:#ec382a;
+			/*@editable*/color:#003366;
 			/*@editable*/font-weight:normal;
 			/*@editable*/text-decoration:underline;
 		}
@@ -328,6 +333,22 @@
 			display:inline;
 			height:auto;
 			max-width:560px;
+		}
+		.bodyContent p{
+			display:inline;
+			margin-bottom:20px;
+		}
+		.bodyContent strong{
+			display:inline;
+			margin-bottom:20px;
+			color:#003366;
+		}
+		.bodyContent h6{
+			color:#003366 !important;
+			font-size:18px;
+			margin:0;
+			padding:0;
+			display:inline;
 		}
 	/*
 	@tab Footer
@@ -347,7 +368,7 @@
 	*/
 		.footerContent{
 			/*@editable*/color:#808080;
-			/*@editable*/font-family:georgia,times,times new roman,serif;
+			/*@editable*/font-family:arial, sans-serif;
 			/*@editable*/font-size:10px;
 			/*@editable*/line-height:150%;
 			padding-top:20px;
@@ -427,7 +448,7 @@
 	@tip Make the third-level headings larger in size for better readability on small screens.
 	*/
 		h3{
-			/*@editable*/font-size:18px !important;
+			/*@editable*/font-size:22px !important;
 			/*@editable*/line-height:100% !important;
 		}
 
@@ -528,7 +549,7 @@
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
 									<tr>
 										<td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
-											Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
+											Your daily briefing on the state of the world and the state of the art for all things TNT.
 										</td>
 										<!-- *|IFNOT:ARCHIVE_PAGE|* -->
 										<td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01">
@@ -546,59 +567,53 @@
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
 									<tr>
 										<td valign="top" class="headerContent">
-											<img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/449fd325-5e0a-4f1d-a7b6-70d49a7e7f67.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:allowdesigner="" mc:allowtext="">
+											<img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/f8dcd368-a078-4e0b-a2e7-d060856ef5bc.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:allowdesigner="" mc:allowtext="">
+                                            
 										</td>
+                                       
 									</tr>
+                                    <tr>
+                                    <td align="center">
+                                    <br>
+                                        <em>Your daily briefing on the state of the world and the state of the art for all things Transnational Threats.</em>
+                                    </td>
+                                    </tr>
 								</table>
 								<!-- // END HEADER -->
 							</td>
 						</tr>
 						<tr>
-							<td align="center" valign="top">
+							<td align="left" valign="top" class="bodyContent">
 								<!-- BEGIN BODY // -->
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
-                                <tr>
-										<td valign="top" class="bodyContent" mc:edit="content_9"><span style="color:#EC382A">JULY 2016 &nbsp;| &nbsp;CHINA POWER NEWSLETTER</span></td>
-									</tr>
-
-									<tr>
-										<td valign="top" class="typeContent" mc:edit="type_content"><h3><strong><span style="color:#4D6E79">China Power Project</span></strong></h3>
-
-<p><span style="font-size:14px">It is our pleasure to send you the July edition of the ChinaPower Newsletter, the monthly newsletter of the CSIS China Power Project. The China Power Project centers on <a href="http://chinapower.csis.org/" target="_blank">ChinaPower</a>--a website that provides an in-depth understanding of the evolving nature of Chinese power relative to other countries. The project examines five interrelated categories of Chinese power: military, economics, technology, social, and international image.&nbsp;<br>
-<br>
-The ChinaPower Newsletter highlights the new and updated content on ChinaPower, as well as featured events and publications. We hope this newsletter provides you with a snapshot of the work we are doing to help our users better understand the complexity of China&#39;s rise. To ensure you continue to receive the ChinaPower Newsletter, please email <a href="mailto:chinapower@csis.org" target="_blank">chinapower@csis.org</a>.</span><br>
-&nbsp;</p>
-
-<hr></td>
-									</tr>
-
-									<tr>
-										<td valign="top" class="authorContent" mc:edit="body1"><h1><span style="color:#EC382A">New Questions</span></h1>
-
-<h2><span style="color:#4D6E79">How are global views towards China trending?</span></h2>
-</td>
-									</tr>
-              									<tr>
-										<td valign="top" class="bodyContent" mc:edit="body2"><p>China&rsquo;s rise has elicited a range of reactions from around the world. Some countries remain skeptical of China&rsquo;s growing international influence. Other countries see China as a source of economic opportunity. ChinaPower asks, how does the favorability of China compare with other countries in Asia, what does polling reveal about how Chinese power is perceived outside of Asia, and how does China perceive its own status in the world? <a href="http://chinapower.csis.org/global-views/" target="_blank">Read More</a>.</p>
-</td>
-									</tr>
-
-									<hr>
-
-									<tr>
-											<td class="bodyContent" style="padding-bottom:0;" mc:edit="body3">
-												<h1>Optics</h1>
-													<img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/4cb9f3d8-04b8-47a4-9add-7154bd001f8e.jpg" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:allowtext="">
-												</td>
-										</tr>
-
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" mc:edit="body_content00"></table>
+                                <hr>
+                                <p style="text-align: center; margin: auto; display: block;">
+                                <a href="https://www.tfaforms.com/452497" target="_blank"><img align="center" alt="Subscribe to Beyond The Wire" src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/d1b2febc-66d7-41ea-8705-93cd116dc381.png" style="max-width:600px;" id="headerImage"></a>
+                                </p>
+                                <hr>
+									<!-- // END BODY -->
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="top">
+                                 
+									<!-- BEGIN FOOTER // -->
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
                                     <tr>
+																					<td valign="top" class="lowerbodyContent" mc:edit="csis_credits"><p style="text-align: left;"><img align="left" height="140" src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/49ef8897-71b2-4ef5-994a-125923f49b58.jpg" style="width: 100px; height: 140px; margin: 5px 15px 5px 5px;" width="100">&nbsp;<br>
+<strong>Thomas Sanderson</strong></p>
 
+<p><span style="font-size:14px">Director and Senior Fellow, Transnational Threats Project<br>
+Thomas Sanderson is director and senior fellow in the CSIS Transnational Threats Project, where he works on terrorism, transnational crime, global trends, and intelligence issues. With fieldwork across nearly 70 countries, Sanderson engages all manner of sources including extremists, insurgents, foreign intelligence officials, nongovernmental organizations, clergy, and academics. He has authored or coauthored 16 major CSIS reports, as well as opinion pieces and articles in the New York Times, Economist, Washington Post, West Point CTC Sentinel, and Harvard Asia-Pacific Review.</span></p>
 
-																				</tr><tr>
-																					<td valign="top" class="lowerbodyContent" mc:edit="csis_credits"><p style="text-align:center;">###</p>
-
-<p>The Center for Strategic and International Studies (CSIS) is a bipartisan, nonprofit organization founded in 1962 and headquartered in Washington, D.C. It seeks to advance global security and prosperity by providing strategic insights and policy solutions to decisionmakers.</p>
+<p style="text-align: center;"><span style="font-size:14px"><strong><u>Transnational Threats Project Staff</u></strong><br>
+<strong>Thomas Sanderson</strong>, Director and Senior Fellow<br>
+<strong>Zack Fellman</strong>,&nbsp;Associate&nbsp;Director and Associate Fellow<br>
+<strong>Maria Galperin</strong>, Research Assistant&nbsp;and Program Coordinator<br>
+<strong>Debbie Stroman</strong>, Special Assistant<br>
+<strong>Hannah Werman</strong>, Research Intern<br>
+<strong>Natalia Peña</strong>, Research Intern<br>
+<strong>Gulya Tlegenova</strong>, Research Intern</span></p>
 </td>
 																				</tr>
 
@@ -607,16 +622,6 @@ The ChinaPower Newsletter highlights the new and updated content on ChinaPower, 
 											<td valign="top" class="bodyContent" mc:edit="content_4"><h5><a href="https://twitter.com/CSIS" target="_blank"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/4bde2700-3f50-471c-8398-aaf2d39e7ea7.png" style="-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;display: inline;max-width: 560px;"></a>&nbsp;&nbsp;&nbsp;<a href="*|FACEBOOK:PROFILEURL|*"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/a4a0cd19-112c-4480-b04d-b5fc26ca3857.png" style="-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;display: inline;max-width: 560px;"></a></h5>
 </td>
 										</tr>
-
-
-									</table>
-									<!-- // END BODY -->
-								</td>
-							</tr>
-							<tr>
-								<td align="center" valign="top">
-									<!-- BEGIN FOOTER // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
 										<tr>
 											<td valign="top" class="footerContent" style="padding-top:25px;" mc:edit="footer_content01"><div style="text-align: center;"><em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
 
@@ -637,9 +642,9 @@ The ChinaPower Newsletter highlights the new and updated content on ChinaPower, 
 							</tr>
 						</table>
 						<!-- // END TEMPLATE -->
-					</td>
-				</tr>
-			</table>
-		</center>
+
+
+
+		</td></tr></table></center>
 	</body>
 	</html>
