@@ -1,642 +1,1128 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>*|MC:SUBJECT|*</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>*|MC:SUBJECT|*</title>
 
+  <style type="text/css">
+    @media only screen and (max-width: 480px) {
+      body[yahoo] .force-col {
+        display: block;
+      }
 
+    }
 
-<style type="text/css">
-		#outlook a{
-			padding:0;
-		}
-		.ReadMsgBody{
-			width:100%;
-		}
-		.ExternalClass{
-			width:100%;
-		}
-		.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{
-			line-height:100%;
-		}
-		body,table,td,p,li,blockquote{
-			-webkit-text-size-adjust:100%;
-			-ms-text-size-adjust:100%;
-		}
-		a{
-			color:#EB4102;
-			-webkit-text-size-adjust:100%;
-			-ms-text-size-adjust:100%;
-		}
-		table,td{
-			mso-table-lspace:0pt;
-			mso-table-rspace:0pt;
-		}
-		img{
-			-ms-interpolation-mode:bicubic;
-		}
-		body{
-			margin:0;
-			padding:0;
-		}
-		img{
-			border:0;
-			height:auto;
-			line-height:100%;
-			outline:none;
-			text-decoration:none;
-		}
-		table{
-			border-collapse:collapse !important;
-		}
-		body,#bodyTable,#bodyCell{
-			height:100% !important;
-			margin:0;
-			padding:0;
-			width:100% !important;
-		}
-		#bodyCell{
-			padding:20px;
-		}
-		#templateContainer{
-			width:600px;
-			border:2px solid #f4f4f4;
-		}
-	/*
+    #outlook a {
+      padding: 0;
+    }
+
+    .ReadMsgBody {
+      width: 100%;
+    }
+
+    .ExternalClass {
+      width: 100%;
+    }
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body,
+    table,
+    td,
+    a,
+    li,
+    blockquote {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    table,
+    td {
+      mso-table-lspace: 0;
+      mso-table-rspace: 0;
+    }
+
+    td {
+      padding-bottom: 0;
+    }
+
+    img {
+      -ms-interpolation-mode: bicubic;
+      margin: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+
+    body,
+    #bodyTable,
+    #bodyCell {
+      height: 100% !important;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    #bodyCell {
+      padding: 20px;
+      border: 1px solid #bbbbbb;
+    }
+
+    #templateContainer {
+      width: 600px;
+    }
+
+    .templateTwoColumnContainer img {
+      display: inline;
+      height: auto;
+      max-width: 260px;
+    }
+
+    .templateThreeColumnContainer img {
+      display: inline;
+      height: auto;
+      max-width: 170px;
+    }
+
+    /*
 	@tab Page
 	@section background style
 	@tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
 	@theme page
 	*/
-		body,#bodyTable{
-			/*@editable*/background-color:#ffffff;
-		}
-	/*
+
+    body,
+    #bodyTable {
+      /*@editable*/
+      background-color: #FFFFFF;
+    }
+
+    /*
 	@tab Page
 	@section background style
 	@tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
 	@theme page
 	*/
-		#bodyCell{
-			/*@editable*/border-top:4px solid #BBBBBB;
-		}
-	/*
+
+    #bodyCell {
+      /*@editable*/
+      border: 1px solid #bbbbbb;
+    }
+
+    /*
 	@tab Page
 	@section email border
 	@tip Set the border for your email.
 	*/
-		#templateContainer{
-			/*@editable*/border:2px solid #f4f4f4;
-		}
-	/*
+
+    #templateContainer {
+      /*@editable*/
+      border: 1px solid #BBBBBB;
+    }
+
+    p {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      display: block;
+      color: #505050;
+      font-family: Helvetica;
+      font-size: 14px;
+      line-height: 150%;
+      padding-top: 0;
+      text-align: left;
+    }
+
+    /*
 	@tab Page
 	@section heading 1
 	@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
 	@style heading 1
 	*/
-		h1{
-			/*@editable*/color:#000 !important;
-			display:block;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:28px;
-			/*@editable*/font-style:normal;
-			/*@editable*/font-weight:bold;
-			/*@editable*/line-height:100%;
-			/*@editable*/letter-spacing:normal;
-			margin-top:0;
-			margin-right:0;
-			margin-bottom:0;
-			margin-left:0;
-			text-align:left;
-		}
-	/*
+
+    h1 {
+      /*@editable*/
+      color: #EC382A !important;
+      display: block;
+      /*@editable*/
+      font-family: Helvetica;
+      /*@editable*/
+      font-size: 26px;
+      /*@editable*/
+      font-style: normal;
+      /*@editable*/
+      font-weight: bold;
+      /*@editable*/
+      line-height: 100%;
+      /*@editable*/
+      letter-spacing: normal;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 10px;
+      margin-left: 0;
+      /*@editable*/
+      text-align: left;
+    }
+
+    /*
 	@tab Page
 	@section heading 2
 	@tip Set the styling for all second-level headings in your emails.
 	@style heading 2
 	*/
-		h2{
-			/*@editable*/color:#000 !important;
-			display:block;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:20px;
-			/*@editable*/font-style:normal;
-			/*@editable*/font-weight:bold;
-			/*@editable*/line-height:100%;
-			/*@editable*/letter-spacing:normal;
-			margin-top:0;
-			margin-right:0;
-			margin-bottom:10px;
-			margin-left:0;
-			text-align:left;
-		}
-	/*
+
+    h2 {
+      /*@editable*/
+      color: #4D6E79 !important;
+      display: block;
+      /*@editable*/
+      font-family: Helvetica;
+      /*@editable*/
+      font-size: 20px;
+      /*@editable*/
+      font-style: normal;
+      /*@editable*/
+      font-weight: bold;
+      /*@editable*/
+      line-height: 100%;
+      /*@editable*/
+      letter-spacing: normal;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 10px;
+      margin-left: 0;
+      /*@editable*/
+      text-align: left;
+    }
+
+    /*
 	@tab Page
 	@section heading 3
 	@tip Set the styling for all third-level headings in your emails.
 	@style heading 3
 	*/
-		h3{
-			/*@editable*/color:#000 !important;
-			display:block;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:22px;
-			/*@editable*/font-style:italic;
-			/*@editable*/font-weight:normal;
-			/*@editable*/line-height:100%;
-			/*@editable*/letter-spacing:normal;
-			margin-top:0;
-			margin-right:0;
-			margin-bottom:10px;
-			margin-left:0;
-			text-align:left;
-		}
-	/*
+
+    h3 {
+      /*@editable*/
+      color: #EC382A !important;
+      display: block;
+      /*@editable*/
+      font-family: Helvetica;
+      /*@editable*/
+      font-size: 16px;
+      /*@editable*/
+      font-style: normal;
+      /*@editable*/
+      font-weight: normal;
+      /*@editable*/
+      line-height: 100%;
+      /*@editable*/
+      letter-spacing: normal;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 10px;
+      margin-left: 0;
+      /*@editable*/
+      text-align: left;
+    }
+
+    /*
 	@tab Page
 	@section heading 4
 	@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
 	@style heading 4
 	*/
-		h4{
-			/*@editable*/color:#000 !important;
-			display:block;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:14px;
-			/*@editable*/font-style:italic;
-			/*@editable*/font-weight:normal;
-			/*@editable*/line-height:100%;
-			/*@editable*/letter-spacing:normal;
-			margin-top:0;
-			margin-right:0;
-			margin-bottom:10px;
-			margin-left:0;
-			text-align:left;
-		}
-		h5{
-			text-align:center;
-		}
-	/*
+
+    h4 {
+      /*@editable*/
+      color: #808080 !important;
+      display: block;
+      /*@editable*/
+      font-family: Helvetica;
+      /*@editable*/
+      font-size: 14px;
+      /*@editable*/
+      font-style: italic;
+      /*@editable*/
+      font-weight: normal;
+      /*@editable*/
+      line-height: 100%;
+      /*@editable*/
+      letter-spacing: normal;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 10px;
+      margin-left: 0;
+      /*@editable*/
+      text-align: left;
+    }
+
+    /*
 	@tab Header
 	@section preheader style
 	@tip Set the background color and bottom border for your email's preheader area.
 	@theme header
 	*/
-		#templatePreheader{
-			/*@editable*/background-color:#dddddd;
-			/*@editable*/border-bottom:0;
-		}
-	/*
+
+    #templatePreheader {
+      /*@editable*/
+      background-color: #F4F4F4;
+      /*@editable*/
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    /*
 	@tab Header
 	@section preheader text
 	@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
 	*/
-		.preheaderContent{
-			/*@editable*/color:#464646;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:10px;
-			/*@editable*/line-height:125%;
-			/*@editable*/text-align:left;
-		}
-	/*
+
+    .preheaderContent {
+      /*@editable*/
+      color: #808080;
+      /*@editable*/
+      font-family: Helvetica;
+      /*@editable*/
+      font-size: 10px;
+      /*@editable*/
+      line-height: 125%;
+      /*@editable*/
+      text-align: left;
+    }
+
+    /*
 	@tab Header
 	@section preheader link
 	@tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
 	*/
-		.preheaderContent a:link,.preheaderContent a:visited,.preheaderContent a .yshortcuts{
-			/*@editable*/color:#0faa91;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
-		}
-	/*
+
+    .preheaderContent a:link,
+    .preheaderContent a:visited,
+    .preheaderContent a .yshortcuts {
+      /*@editable*/
+      color: #606060;
+      /*@editable*/
+      font-weight: normal;
+      /*@editable*/
+      text-decoration: underline;
+    }
+
+    /*
 	@tab Header
 	@section header style
 	@tip Set the background color and borders for your email's header area.
 	@theme header
 	*/
-		#templateHeader{
-			/*@editable*/background-color:#ffffff;
-			/*@editable*/border-top:1px none #ffffff;
-			/*@editable*/border-bottom:1px none #ffffff;
-		}
-	/*
+
+    #templateHeader {
+      /*@editable*/
+      background-color: #F4F4F4;
+    }
+
+    /*
 	@tab Header
 	@section header text
 	@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
 	*/
-		.headerContent{
-			/*@editable*/color:#505050;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:20px;
-			/*@editable*/font-weight:bold;
-			/*@editable*/line-height:100%;
-			/*@editable*/padding-top:0;
-			/*@editable*/padding-right:0;
-			/*@editable*/padding-bottom:0;
-			/*@editable*/padding-left:0;
-			/*@editable*/text-align:left;
-			/*@editable*/vertical-align:middle;
-		}
-	/*
+
+    .headerContent {
+      /*@editable*/
+      color: #505050;
+      /*@editable*/
+      font-family: Helvetica;
+      /*@editable*/
+      font-size: 20px;
+      /*@editable*/
+      font-weight: bold;
+      /*@editable*/
+      line-height: 100%;
+      /*@editable*/
+      padding-top: 0;
+      /*@editable*/
+      padding-right: 0;
+      /*@editable*/
+      padding-bottom: 0;
+      /*@editable*/
+      padding-left: 0;
+      /*@editable*/
+      text-align: left;
+      /*@editable*/
+      vertical-align: middle;
+      background-color: #4D6E79;
+    }
+
+    /*
 	@tab Header
 	@section header link
 	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 	*/
-		.headerContent a:link,.headerContent a:visited,.headerContent a .yshortcuts{
-			/*@tab Header
-@section header link
-@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.*/color:#EB4102;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
-		}
-		#headerImage{
-			height:auto;
-			max-width:600px;
-		}
-	/*
+
+    .headerContent a:link,
+    .headerContent a:visited,
+    .headerContent a .yshortcuts {
+      /*@editable*/
+      color: #EB4102;
+      /*@editable*/
+      font-weight: normal;
+      /*@editable*/
+      text-decoration: underline;
+    }
+
+    #headerImage {
+      height: auto;
+      max-width: 600px;
+    }
+
+    /*
 	@tab Body
 	@section body style
 	@tip Set the background color and borders for your email's body area.
 	*/
-		#templateBody{
-			/*@editable*/background-color:#ffffff;
-			/*@editable*/border-top:1px none #FFFFFF;
-			/*@editable*/border-bottom:1px none #CCCCCC;
-		}
-	/*
+
+    #templateBody {
+      /*@editable*/
+      background-color: #FFFFFF;
+      /*@editable*/
+      border-bottom: 0;
+    }
+
+    /*
 	@tab Body
 	@section body text
 	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
 	@theme main
 	*/
-		.bodyContent{
-			/*@editable*/color:#000;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:16px;
-			/*@editable*/line-height:150%;
-			padding-top:20px;
-			padding-right:20px;
-			padding-bottom:20px;
-			padding-left:20px;
-			/*@editable*/text-align:left;
-		}
-		.lowerbodyContent{
-			/*@editable*/color:#000;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:16px;
-			/*@editable*/line-height:120%;
-			padding-right:20px;
-			padding-left:20px;
-			/*@editable*/text-align:left;
-		}
-		.typeContent{
-			/*@editable*/color:#000;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:16px;
-			/*@editable*/line-height:150%;
-			padding-right:20px;
-			padding-left:20px;
-			/*@editable*/text-align:left;
-		}
-		.typeContent p{
-			font-style:italic;
-		}
-		.typeContent h2{
-			padding-top:15px;
-		}
-		.typeContent h3{
-			font-style:normal;
-		}
-		.authorContent{
-			/*@editable*/color:#000;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:16px;
-			/*@editable*/line-height:150%;
-			padding-right:20px;
-			padding-left:20px;
-			/*@editable*/text-align:left;
-		}
-		.authorContent h2{
-			padding-top:15px;
-		}
-		.authorContent h3{
-			font-style:normal;
-		}
-	/*
+
+    .bodyContent {
+      /*@editable*/
+      color: #505050;
+      /*@editable*/
+      font-family: Helvetica;
+      /*@editable*/
+      font-size: 16px;
+      /*@editable*/
+      line-height: 150%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+      /*@editable*/
+      text-align: left;
+      background-color: #FFFFFF;
+    }
+
+    /*
 	@tab Body
 	@section body link
 	@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 	*/
-		.bodyContent a:link,.bodyContent a:visited,.bodyContent a .yshortcuts{
-			/*@editable*/color:#0faa91;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
-		}
-		.bodyContent img{
-			display:inline;
-			height:auto;
-			max-width:560px;
-		}
-	/*
+
+    .bodyContent a:link,
+    .bodyContent a:visited,
+    .bodyContent a .yshortcuts {
+      /*@editable*/
+      color: #EB4102;
+      /*@editable*/
+      font-weight: normal;
+      /*@editable*/
+      text-decoration: underline;
+    }
+
+    .bodyContent img {
+      display: inline;
+      height: auto;
+      max-width: 570px;
+    }
+
+    .templateTwoColumnContainer {
+      width: 260px;
+    }
+
+    .templateThreeColumnContainer {
+      width: 173px;
+    }
+
+    /*
+	@tab Columns
+	@section column style
+	@tip Set the background color and borders for your email's column area.
+	*/
+
+    #templateColumns {
+      /*@editable*/
+      background-color: #FFFFFF;
+      /*@editable*/
+      border-top: 1px solid #cccccc;
+      /*@editable*/
+      border-bottom: 1px inset #CCCCCC;
+    }
+
+    /*
+	@tab Columns
+	@section left column text
+	@tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
+	*/
+
+    .leftColumnContent {
+      /*@editable*/
+      color: #505050;
+      /*@editable*/
+      font-family: Helvetica;
+      /*@editable*/
+      font-size: 14px;
+      /*@editable*/
+      line-height: 150%;
+      padding-top: 0;
+      padding-right: 20px;
+      padding-left: 0px;
+      /*@editable*/
+      text-align: left;
+    }
+
+    /*
+	@tab Columns
+	@section column link
+	@tip Set the styling for your email's  column content links. Choose a color that helps them stand out from your text.
+	*/
+
+    #templateColumns a:link,
+    #templateColumns a:visited,
+    #templateColumns a .yshortcuts {
+      /*@editable*/
+      color: #EB4102;
+      /*@editable*/
+      font-weight: normal;
+      /*@editable*/
+      text-decoration: underline;
+    }
+
+    /*
+	@tab Columns
+	@section center column text
+	@tip Set the styling for your email's center column content text. Choose a size and color that is easy to read.
+	*/
+
+    .centerColumnContent {
+      /*@editable*/
+      color: #505050;
+      /*@editable*/
+      font-family: Helvetica;
+      /*@editable*/
+      font-size: 14px;
+      /*@editable*/
+      line-height: 150%;
+      padding-top: 0;
+      padding-right: 20px;
+      padding-left: 20px;
+      /*@editable*/
+      text-align: left;
+    }
+
+    /*
+	@tab Columns
+	@section right column text
+	@tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
+	*/
+
+    .rightColumnContent {
+      /*@editable*/
+      color: #505050;
+      /*@editable*/
+      font-family: Helvetica;
+      /*@editable*/
+      font-size: 14px;
+      /*@editable*/
+      line-height: 150%;
+      padding-top: 0;
+      padding-right: 0px;
+      padding-left: 20px;
+      /*@editable*/
+      text-align: left;
+    }
+
+    /*
 	@tab Footer
 	@section footer style
 	@tip Set the background color and borders for your email's footer area.
 	@theme footer
 	*/
-		#templateFooter{
-			/*@editable*/background-color:#F4F4F4;
-			/*@editable*/border-top:1px solid #FFFFFF;
-		}
-	/*
+
+    #templateFooter {
+      /*@editable*/
+      background-color: #F4F4F4;
+      /*@editable*/
+      border-top: 0;
+    }
+
+    /*
 	@tab Footer
 	@section footer text
 	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
 	@theme footer
 	*/
-		.footerContent{
-			/*@editable*/color:#808080;
-			/*@editable*/font-family:helvetica, arial, sans-serif;
-			/*@editable*/font-size:10px;
-			/*@editable*/line-height:150%;
-			padding-top:20px;
-			padding-right:20px;
-			padding-bottom:20px;
-			padding-left:20px;
-			/*@editable*/text-align:center;
-		}
-		.footerContent h3{
-			text-align:center;
-		}
-	/*
+
+    .footerContent {
+      /*@editable*/
+      color: #808080;
+      /*@editable*/
+      font-family: Helvetica;
+      /*@editable*/
+      font-size: 10px;
+      /*@editable*/
+      line-height: 150%;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      /*@editable*/
+      text-align: left;
+    }
+
+    /*
 	@tab Footer
 	@section footer link
 	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
 	*/
-		.footerContent a:link,.footerContent a:visited,.footerContent a .yshortcuts,.footerContent a span{
-			/*@editable*/color:#606060;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
-		}
-	@media only screen and (max-width: 480px){
-		body,table,td,p,a,li,blockquote{
-			-webkit-text-size-adjust:none !important;
-		}
 
-}	@media only screen and (max-width: 480px){
-		body{
-			width:100% !important;
-			min-width:100% !important;
-		}
+    .footerContent a:link,
+    .footerContent a:visited,
+    .footerContent a .yshortcuts,
+    .footerContent a span {
+      /*@editable*/
+      color: #606060;
+      /*@editable*/
+      font-weight: normal;
+      /*@editable*/
+      text-decoration: underline;
+    }
 
-}	@media only screen and (max-width: 480px){
-		#bodyCell{
-			padding:10px !important;
-		}
+    @media only screen and (max-width: 480px) {
+      body,
+      table,
+      td,
+      p,
+      a,
+      li,
+      blockquote {
+        -webkit-text-size-adjust: none !important;
+      }
 
-}	@media only screen and (max-width: 480px){
-	/*
+    }
+
+    @media only screen and (max-width: 480px) {
+      body {
+        width: 100% !important;
+        min-width: 100% !important;
+      }
+
+    }
+
+    @media only screen and (max-width: 480px) {
+      #bodyCell {
+        padding: 10px !important;
+      }
+
+    }
+
+    @media only screen and (max-width: 480px) {
+      /*
 	@tab Mobile Styles
 	@section template width
 	@tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
 	*/
-		#templateContainer{
-			/*@tab Mobile Styles
+      #templateContainer {
+        /*@tab Mobile Styles
 @section template width
-@tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.*/max-width:600px !important;
-			/*@editable*/width:100% !important;
-		}
+@tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.*/
+        max-width: 600px !important;
+        /*@editable*/
+        width: 100% !important;
+      }
 
-}	@media only screen and (max-width: 480px){
-	/*
+    }
+
+    @media only screen and (max-width: 480px) {
+      /*
 	@tab Mobile Styles
 	@section heading 1
 	@tip Make the first-level headings larger in size for better readability on small screens.
 	*/
-		h1{
-			/*@editable*/font-size:24px !important;
-			/*@editable*/line-height:100% !important;
-		}
+      h1 {
+        /*@editable*/
+        font-size: 24px !important;
+        /*@editable*/
+        line-height: 100% !important;
+      }
 
-}	@media only screen and (max-width: 480px){
-	/*
+    }
+
+    @media only screen and (max-width: 480px) {
+      /*
 	@tab Mobile Styles
 	@section heading 2
 	@tip Make the second-level headings larger in size for better readability on small screens.
 	*/
-		h2{
-			/*@editable*/font-size:20px !important;
-			/*@editable*/line-height:100% !important;
-		}
+      h2 {
+        /*@editable*/
+        font-size: 20px !important;
+        /*@editable*/
+        line-height: 100% !important;
+      }
 
-}	@media only screen and (max-width: 480px){
-	/*
+    }
+
+    @media only screen and (max-width: 480px) {
+      /*
 	@tab Mobile Styles
 	@section heading 3
 	@tip Make the third-level headings larger in size for better readability on small screens.
 	*/
-		h3{
-			/*@editable*/font-size:18px !important;
-			/*@editable*/line-height:100% !important;
-		}
+      h3 {
+        /*@editable*/
+        font-size: 18px !important;
+        /*@editable*/
+        line-height: 100% !important;
+      }
 
-}	@media only screen and (max-width: 480px){
-	/*
+    }
+
+    @media only screen and (max-width: 480px) {
+      /*
 	@tab Mobile Styles
 	@section heading 4
 	@tip Make the fourth-level headings larger in size for better readability on small screens.
 	*/
-		h4{
-			/*@editable*/font-size:16px !important;
-			/*@editable*/line-height:100% !important;
-		}
+      h4 {
+        /*@editable*/
+        font-size: 16px !important;
+        /*@editable*/
+        line-height: 100% !important;
+      }
 
-}	@media only screen and (max-width: 480px){
-		#templatePreheader{
-			display:none !important;
-		}
+    }
 
-}	@media only screen and (max-width: 480px){
-	/*
+    @media only screen and (max-width: 480px) {
+      #templatePreheader {
+        display: none !important;
+      }
+
+    }
+
+    @media only screen and (max-width: 480px) {
+      /*
 	@tab Mobile Styles
 	@section header image
 	@tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
 	*/
-		#headerImage{
-			/*@tab Mobile Styles
+      #headerImage {
+        /*@tab Mobile Styles
 @section header image
-@tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.*/height:auto !important;
-			/*@editable*/max-width:600px !important;
-			/*@editable*/width:100% !important;
-		}
+@tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.*/
+        height: auto !important;
+        /*@editable*/
+        max-width: 600px !important;
+        /*@editable*/
+        width: 100% !important;
+      }
 
-}	@media only screen and (max-width: 480px){
-	/*
+    }
+
+    @media only screen and (max-width: 480px) {
+      /*
 	@tab Mobile Styles
 	@section header text
 	@tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 	*/
-		.headerContent{
-			/*@editable*/font-size:20px !important;
-			/*@editable*/line-height:125% !important;
-		}
+      .headerContent {
+        /*@editable*/
+        font-size: 20px !important;
+        /*@editable*/
+        line-height: 125% !important;
+      }
 
-}	@media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section body image
-	@tip Make the main body image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
-	*/
-		#bodyImage{
-			/*@tab Mobile Styles
-@section body image
-@tip Make the main body image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.*/height:auto !important;
-			/*@editable*/max-width:560px !important;
-			/*@editable*/width:100% !important;
-		}
+    }
 
-}	@media only screen and (max-width: 480px){
-	/*
+    @media only screen and (max-width: 480px) {
+      /*
 	@tab Mobile Styles
 	@section body text
 	@tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 	*/
-		.bodyContent{
-			/*@editable*/font-size:18px !important;
-			/*@editable*/line-height:125% !important;
-		}
+      .bodyContent {
+        /*@editable*/
+        font-size: 18px !important;
+        /*@editable*/
+        line-height: 125% !important;
+      }
 
-}	@media only screen and (max-width: 480px){
-	/*
+    }
+
+    @media only screen and (max-width: 480px) {
+      .templateColumnContainer,
+      .templateTwoColumnContainer,
+      .templateThreeColumnContainer {
+        display: block !important;
+        width: 100% !important;
+      }
+
+    }
+
+    @media only screen and (max-width: 480px) {
+      /*
+	@tab Mobile Styles
+	@section body image
+	*/
+      .bodyContent img {
+        /*@tab Mobile Styles
+@section column image
+@tip Make the column image fluid for portrait or landscape view adaptability.*/
+        height: auto !important;
+        /*@editable*/
+        width: 100% !important;
+        /*@editable*/
+        max-width: 100% !important;
+      }
+
+    }
+
+    @media only screen and (max-width: 480px) {
+      /*
+	@tab Mobile Styles
+	@section column image
+	@tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+	*/
+      .columnImage {
+        /*@tab Mobile Styles
+@section column image
+@tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.*/
+        height: auto !important;
+        /*@editable*/
+        width: 100% !important;
+        /*@editable*/
+        max-width: 100% !important;
+      }
+
+    }
+
+    @media only screen and (max-width: 480px) {
+      /*
 	@tab Mobile Styles
 	@section footer text
 	@tip Make the body content text larger in size for better readability on small screens.
 	*/
-		.footerContent{
-			/*@editable*/font-size:14px !important;
-			/*@editable*/line-height:115% !important;
-		}
+      .footerContent {
+        /*@editable*/
+        font-size: 14px !important;
+        /*@editable*/
+        line-height: 115% !important;
+      }
 
-}	@media only screen and (max-width: 480px){
-		.footerContent a{
-			display:block !important;
-		}
+    }
 
-}</style></head>
+    @media only screen and (max-width: 480px) {
+      .footerContent a {
+        display: block !important;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .rightColumnContent,
+      .leftColumnConten t {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+  </style>
+</head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
-	<center>
-		<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
-			<tr>
-				<td align="center" valign="top" id="bodyCell">
-					<!-- BEGIN TEMPLATE // -->
-					<table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
-						<tr>
-							<td align="center" valign="top">
-								<!-- BEGIN PREHEADER // -->
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
-									<tr>
-										<td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
-											Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
-										</td>
-										<!-- *|IFNOT:ARCHIVE_PAGE|* -->
-										<td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01">
-											Email not displaying correctly?<br><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
-										</td>
-										<!-- *|END:IF|* -->
-									</tr>
-								</table>
-								<!-- // END PREHEADER -->
-							</td>
-						</tr>
-						<tr>
-							<td align="center" valign="top">
-								<!-- BEGIN HEADER // -->
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
-									<tr>
-										<td valign="top" class="headerContent">
-											<img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/41747187-2ded-4405-96aa-fe1e8e78400a.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:allowdesigner="" mc:allowtext="">
-										</td>
-									</tr>
-								</table>
-								<!-- // END HEADER -->
-							</td>
-						</tr>
-						<tr>
-							<td align="center" valign="top">
-								<!-- BEGIN BODY // -->
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
-                                <tr>
-										<td valign="top" class="bodyContent" mc:edit="content_9"><span style="color:173862">SEPTEMBER 2016 &nbsp;| &nbsp;NEWSLETTER NAME</span></td>
+  <center>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable" style="height:100%;">
+      <tr>
+        <td align="center" valign="top" id="bodyCell">
+          <!-- BEGIN TEMPLATE // -->
+          <table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+            <tr>
+              <td align="center" valign="top">
+                <!-- BEGIN PREHEADER // -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
+                  <tr>
+                    <td valign="top" class="preheaderContent" style="padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;" mc:edit="preheader_content00">Chinese Debt Concern; Chinese Air Quality Concerns; Chinese Contribution to the United Nations; Standoff at Doka La; U.S. North Korean Sanctions</td>
+                    <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                    <td valign="top" width="180" class="preheaderContent" style="padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:0;" mc:edit="preheader_content01">
+                      Email not displaying correctly?<br><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                    </td>
+                    <!-- *|END:IF|* -->
+                  </tr>
+                </table>
+                <!-- // END PREHEADER -->
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <!-- BEGIN HEADER // -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+                  <tr>
+                    <td valign="top" class="headerContent">
+                      <img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/c4658096-42fe-4383-bbd3-a97863654b62.png" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="" alt="c4658096-42fe-4383-bbd3-a97863654b62.png">
+                    </td>
+                  </tr>
+                </table>
+                <!-- // END HEADER -->
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="bodyContent">
+                <hr>
+                <!-- BEGIN BODY // -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+                  <tr>
+                    <td valign="top" mc:edit="body_content">
+                      <h3>September 2017  |  CHINAPOWER NEWSLETTER</h3>
+                      <h2>China Power Project</h2>
+                      <p>It is our pleasure to send you the September edition of the ChinaPower Newsletter, the monthly newsletter of the CSIS China Power Project. The China Power Project centers on ChinaPower--a website that provides an in-depth understanding
+                        of the evolving nature of Chinese power relative to other countries. The ChinaPower Newsletter highlights the new and updated content on the website, as well as featured events and publications. We hope this newsletter provides
+                        you with a snapshot of the work we are doing to help our users better understand the complexity of China's rise.</p>
+                      <hr>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- BEGIN NEW FEATURE // -->
+            <tr>
+              <td class="bodyContent">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr mc:hideable>
+                    <td mc:edit="head_01">
+                      <h1>New Feature</h1>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable>
+                    <td align="center" valign="top" mc:edit="body_text00">
+                      <h2>Is China facing a looming debt crisis?</h2>
+                      <div><img height="296" src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/9fbac772-958f-4e6b-a276-cb1bef787db4.jpg" style="border: 0px initial ; width: 570px; height: 296px; margin: 0px;" width="570" alt="9fbac772-958f-4e6b-a276-cb1bef787db4.jpg">
+                      </div>
+                      <p>After decades of near double-digit growth, Chinese leaders have turned to using debt to fuel growth and stave off an economic slowdown. However, China’s credit expansion over the past decade has contributed to growing financial vulnerabilities
+                        that could threaten the long-term health of its economy. Learn more about China’s debt concerns with this ChinaPower <a href="https://chinapower.csis.org/china-face-looming-debt-crisis/" target="_blank">exclusive.</a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- // END NEW FEATURE -->
+            <!-- BEGIN PODCAST // -->
+            <tr>
+              <td align="center" valign="top" class="bodyContent">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr mc:hideable>
+                    <td mc:edit="head_02">
+                      <h1>ChinaPower Podcasts</h1>
+                    </td>
+                  </tr>
+                  <tr mc:repeatable>
+                    <td style="padding-bottom:20px;" align="center" valign="top" class="podcast" mc:edit="podcast">
+                      <h2>China-India Standoff at Doka La:</h2>
+                      <h3>A Conversation with Jeff Smith</h3>
+                      <div><img height="374" src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/cbdba170-b3fe-4417-8cf4-70b092046582.jpg" style="border: 0px initial; width: 570px; height: 374px;" width="570" alt="cbdba170-b3fe-4417-8cf4-70b092046582.jpg"
+                          vspace="15" hspace="15"> </div>
+                      <p>In this episode, we discuss Sino-Indian relations and the recent escalation in tensions between the two nations that began on June 16th with the unprecedented intervention of Indian troops intervening on behalf of Bhutan in the disputed
+                        Doklam plateau.
+                      </p>
+                      <p>
+                        Jeff Smith is the Director of Asian Security Programs and the Kramer Strategy Fellow at the American Foreign Policy Council. <a href="https://chinapower.csis.org/podcasts/china-india-standoff-at-doka-la/" target="_blank">Listen Here</a>
+                      </p>
+                    </td>
+                  </tr>
 
 
 
-									</tr>
-
-									<tr>
-										<td valign="top" class="authorContent" mc:edit="event_name"><h1><span style="color:#004165">Heading A</span></h1>
-
-<h2><span style="color:#0a8672">Heading B</span></h2>
-</td>
-
-										</tr>
-              									<tr>
-										<td valign="top" class="bodyContent" mc:edit="supplementary"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat massa eleifend sapien auctor pretium. Duis nec ipsum mi. Aliquam sit amet lorem nec odio fermentum interdum. Nulla aliquam nisi nec ante vehicula sodales. Integer consectetur gravida porta. Donec pellentesque ex nec dui lobortis pretium. Maecenas id turpis dictum, maximus odio eget, euismod orci. Vestibulum blandit pharetra justo eu porttitor. Aenean eget iaculis dolor. In a luctus augue, non tincidunt est. Duis venenatis orci ut nisl faucibus, eu commodo arcu tristique. Pellentesque lacus nunc, eleifend et dignissim eget, posuere sit amet erat. Praesent et mattis nulla. Integer blandit, lectus vitae suscipit auctor, neque diam scelerisque libero, at pulvinar velit leo bibendum justo. Nulla est dui, lacinia ac mollis nec, lobortis cursus metus. Etiam sed blandit purus.
-
-Praesent sed urna eget libero tempus porttitor. Cras cursus, mi id maximus viverra, metus lorem iaculis lacus, vitae fermentum ipsum sapien sed erat. Nunc malesuada quam sit amet metus suscipit congue. Cras dignissim magna mi. Nam ex elit, viverra in nisi vel, aliquam fringilla elit. Sed pellentesque odio eu ultrices finibus. Aliquam ornare non enim laoreet blandit. Phasellus nunc urna, vulputate vitae libero vitae, molestie cursus ipsum. Nam ultrices bibendum aliquet. Aliquam vel mi quis nisl laoreet efficitur id vel lacus. Integer lectus sapien, ultricies in velit ut, pretium hendrerit nisi. Suspendisse consequat, tortor a sodales consectetur, ipsum ante consectetur erat, et malesuada diam enim eget odio.
-
-Nam et pretium nulla. Nam sed tristique mi. Cras ultricies odio urna. Praesent efficitur nibh sem, ut blandit nunc semper vel. Mauris suscipit consequat convallis. Etiam imperdiet a augue a fermentum. Donec commodo dui eu orci suscipit condimentum. Integer congue a metus id mattis. Nunc non nisi turpis. Praesent eu est id justo posuere aliquam non in odio. Aenean sit amet vulputate arcu, nec hendrerit ante. Sed elit nisi, pharetra id nisl et, efficitur egestas massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Suspendisse tellus libero, feugiat vitae nibh et, aliquam vestibulum ligula. Mauris faucibus lacinia quam ut dapibus. Fusce lacinia nunc ut massa scelerisque iaculis. Nullam eu bibendum erat, in tincidunt elit. Nunc vulputate id lorem vel viverra. Quisque malesuada mauris sit amet leo sollicitudin pretium. Suspendisse potenti. Suspendisse pellentesque libero sit amet orci elementum, vehicula scelerisque lorem dapibus. Suspendisse turpis elit, auctor vel nulla eu, vestibulum molestie odio. Quisque maximus, nibh vel bibendum scelerisque, turpis ante mattis leo, eu ultricies urna est non leo. Maecenas porttitor nec eros a dignissim. In euismod non ante non feugiat. Sed posuere vulputate condimentum. Proin dapibus et est tempor rhoncus. <a href="http://chinapower.csis.org/global-views/" target="_blank">Read More</a>.</p>
-</td>
-									</tr>
-
-                                    <tr>
-
-
-																				</tr><tr>
-																					<td valign="top" class="lowerbodyContent" mc:edit="csis_credits"><p style="text-align:center;">###</p>
-
-<p>The Center for Strategic and International Studies (CSIS) is a bipartisan, nonprofit organization founded in 1962 and headquartered in Washington, D.C. It seeks to advance global security and prosperity by providing strategic insights and policy solutions to decisionmakers.</p>
-</td>
-																				</tr>
-
-
-										<tr>
-											<td valign="top" class="bodyContent" mc:edit="content_4"><h5><a href="https://twitter.com/CSIS" target="_blank"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/4bde2700-3f50-471c-8398-aaf2d39e7ea7.png" style="-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;display: inline;max-width: 560px;"></a>&nbsp;&nbsp;&nbsp;<a href="*|FACEBOOK:PROFILEURL|*"><img src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/a4a0cd19-112c-4480-b04d-b5fc26ca3857.png" style="-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;display: inline;max-width: 560px;"></a></h5>
-</td>
-										</tr>
-
-
-									</table>
-									<!-- // END BODY -->
-								</td>
-							</tr>
-							<tr>
-								<td align="center" valign="top">
-									<!-- BEGIN FOOTER // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
-										<tr>
-											<td valign="top" class="footerContent" style="padding-top:25px;" mc:edit="footer_content01"><div style="text-align: center;"><em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
-
-												<p>202-887-0200 | <a href="http://www.CSIS.org">www.CSIS.org</a><br>
-													*|HTML:LIST_ADDRESS_HTML|*<br>
-													*|END:IF|*</p>
-												</div>
-											</td>
-										</tr>
-										<tr>
-
-											<td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content02"><div style="text-align: center;"><a href="https://www.csis.org/subscribe/manage/*|LIST:UID|*/*|UNIQUEID|*" target="_blank">Update preferences</a>&nbsp;&nbsp;&nbsp;<a href="*|UNSUB|*">Unsubscribe *|EMAIL|* from this list.</a></div>
-											</td>
-										</tr>
-									</table>
-									<!-- // END FOOTER -->
-								</td>
-							</tr>
-						</table>
-						<!-- // END TEMPLATE -->
 
 
 
-		</td></tr></table></center>
-	</body>
-	</html>
+                  <!-- // 2 COLUMNS -->
+                  <tr mc:repeatable>
+                    <td>
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <!-- // COLUMN 1-2 -->
+                          <td align="center" valign="top" class="templateTwoColumnContainer" style="padding-top:40px;">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="leftColumnContent" mc:edit="col_1_2">
+                                  <h2>China-India Standoff at Doka La:</h2>
+                                  <h3>A Conversation with Jeff <span style="font-size:14px">Smith</span>
+                              </h3>
+                                  <br><img class="columnImage" height="167" src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/cbdba170-b3fe-4417-8cf4-70b092046582.jpg" style="border: 0px initial ; width: 250px; height: 167px; margin: 0px;"
+                                    width="250" alt="cbdba170-b3fe-4417-8cf4-70b092046582.jpg">
+                                </td>
+                              </tr>
+
+                            </table>
+                          </td>
+                          <!-- // COLUMN 2-2 -->
+                          <td align="center" valign="top" class="templateTwoColumnContainer" style="padding-top:40px;">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+
+                              <tr>
+                                <td valign="top" class="rightColumnContent" mc:edit="right_column_content_2_2">
+                                  In this episode, we discuss Sino-Indian relations and the recent escalation in tensions between the two nations that b<span style="font-size:14px">egan on June 16th with the unprecedented intervention of Indian troops intervening on behalf of Bhutan in the disputed Doklam plate</span>au.
+                                  Jeff Smith is the Director of Asian Security Programs and the Kramer Strategy Fellow at the American Foreign Policy Council. <a href="https://chinapower.csis.org/podcasts/china-india-standoff-at-doka-la/" target="_blank">Listen Here</a>
+                                  <br>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- // END 2 COLUMNS -->
+
+
+
+
+                  <!-- BEGIN MULTI-COLUMN FOOT // -->
+                  <tr mc:repeatable>
+                    <td>
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <!-- // COLUMN 1-2 -->
+                          <td align="center" valign="middle" class="templateTwoColumnContainer" style="padding-top:40px;">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                              <tr>
+                                <td class="leftColumnContent" mc:edit="subscribe_01">
+                                  <div style="text-align:center;">
+                                    Love the ChinaPower Podcast?</div>
+                                  <div style="text-align:center;">Subscribe on iTunes and never miss an episode! <a href="https://itunes.apple.com/us/podcast/chinapower/id1144663360?mt=2&amp;utm_source=CSIS+All&amp;utm_campaign=201f5db049-EMAIL_CAMPAIGN_2016_12_01&amp;utm_medium=email&amp;utm_term=0_f326fc46b6-201f5db049-&amp;utm_source=Members&amp;utm_campaign=f635227067-EMAIL_CAMPAIGN_2017_09_11&amp;utm_medium=email&amp;utm_term=0_e842221dc2-f635227067-"
+                                      target="_blank">Subscribe Here</a> </div>
+                                </td>
+                              </tr>
+
+                            </table>
+                          </td>
+                          <!-- // COLUMN 2-2 -->
+                          <td align="center" valign="top" class="templateTwoColumnContainer" style="padding-top:40px;">
+                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+
+                              <tr>
+                                <td valign="top" class="rightColumnContent" style="padding-bottom:20px;padding-left:30px" mc:edit="right_column_content01"><img height="250" src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/ee14dd4b-66dc-4fec-b106-3b50fd9da427.jpg" style="border: 0px initial ; width: 250px; height: 250px; margin: 0px;" width="250" alt="ee14dd4b-66dc-4fec-b106-3b50fd9da427.jpg">
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+
+                  <!-- // END MULTI-COLUMN FOOT -->
+                </table>
+              </td>
+            </tr>
+            <!-- // END PODCAST -->
+            <!-- BEGIN UPDATED CONTENT // -->
+            <tr>
+              <td align="center" valign="top" class="bodyContent">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr mc:hideable>
+                    <td align="center" valign="top" mc:edit="heading_03">
+                      <h1> Updated Content </h1>
+                    </td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr mc:repeatable>
+                    <td style="padding-bottom:40px;" align="center" valign="top" mc:edit="head_03">
+                      <h2>Is China contributing to the United Nations’ mission?</h2>
+                      <div><img height="296" src="https://gallery.mailchimp.com/833ec271d60c6750d9c3baaac/images/ffebd2fb-dc89-41f9-95b9-95a2fa7d6cfa.jpg" style="border: 0px ; width: 570px; height: 296px; margin: 0px;" width="570" alt="ffebd2fb-dc89-41f9-95b9-95a2fa7d6cfa.jpg">
+                      </div>
+                      <p>In recent years, China’s support for the UN has grown considerably. Its increasing financial and personnel contributions offer China a low-cost means of demonstrating its commitment to global stability while alleviating concerns
+                        over its growing military and economic power. <a href="https://chinapower.csis.org/china-un-mission/%20" target="_blank">Read More</a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+                <hr>
+              </td>
+            </tr>
+            <!-- // END UPDATED CONTENT -->
+            <tr>
+              <td align="center" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                      <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                        <tr>
+                          <td align="center" valign="top">
+                            <!-- BEGIN FOOTER // -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
+                              <tr>
+                                <td valign="top" align="center" class="footerContent" mc:edit="content_8">
+                                  <p style="text-align:center;"><a href="http://chinapower.csis.org" target="_blank"><strong>ChinaPower</strong></a> provides an in-depth understanding of the evolving nature of Chinese power relative to other countries. The project examines five interrelated
+                                    categories of Chinese power: military, economics, technology, social, and international image. Through objective analysis and data visualization, ChinaPower unpacks the complexity of China’s rise.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" align="center" class="footerContent" mc:edit="footer_content00">
+                                  <div style="text-align:center;">
+                                    <span style="font-size:14px"><a href="https://twitter.com/ChinaPowerCSIS" target="_blank">Follow on Twitter</a>   <a href="http://www.facebook.com/ChinaPowerProject" target="_blank">Friend on Facebook</a>  </span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" align="center" class="footerContent" style="padding-top:0;" mc:edit="footer_content01">
+                                  <div style="text-align:center;">
+                                    <em>Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+                                  </div>
+                                  <div style="text-align:center;">
+                                    *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*<br>
+                                    <br><strong>Our mailing address is:</strong>
+                                    <br>*|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content02">
+                                  <div style="text-align:center;">
+                                    <a href="*|UNSUB|*">unsubscribe from this list</a>   <a href="*|UPDATE_PROFILE|*">update subscription preferences</a> </div>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- // END FOOTER -->
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- // END TEMPLATE -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+
+</html>
